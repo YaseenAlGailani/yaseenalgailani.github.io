@@ -1,11 +1,12 @@
 html{
   background-color:#404040;
-  height:100%;
+  height:98%;
+  margin:auto;
 }
 
 body{
   position:relative;
-  background-color:#EF9393;
+  background-color:#FF8D8D;
   margin:10px;
   height: inherit;
   padding:2%;
@@ -15,17 +16,15 @@ main{
   top:50%;
   height:20%;
   margin-top:-10%;
-  width:100%;
+  width:inherit;
 }
 hr{
   margin:20px 0px;
   height:5px;
   border:none;
-  width:90%;
   background-color:#404040;
 }
 .heading{
-  width:100%;
   font: 100px/90px "Patua One";
   color:#404040;
 }
@@ -39,12 +38,4 @@ hr{
   font:21px "Nixie One";
   text-align:left;
   color:white;
-}
-@media screen and (max-width:768px){
-  .heading{
-    font: 55px/45px "Patua One";
-    color:#404040;
-  }
-  .heading p:nth-child(2){
-    font-size:40px;
 }
