@@ -1,14 +1,20 @@
 html{
-background-color:#404040;
-height:99%;
-width:100%;
+  background-color:#404040;
+  height:100%;
 }
 
 body{
-  /* position:relative; */
+  position:relative;
   background-color:#EF9393;
   margin:10px;
-  height: 98%;
+  height: inherit;
+  padding:2%;
+}
+main{
+  position:absolute;
+  top:50%;
+  height:20%;
+  margin-top:-10%;
   width:100%;
 }
 hr{
@@ -19,22 +25,26 @@ hr{
   background-color:#404040;
 }
 .heading{
+  width:100%;
   font: 100px/90px "Patua One";
   color:#404040;
 }
 .heading p{
   margin:0px;
 }
-main{
-  position:absolute;
-  top:50%;
-  height:20%;
-  margin-top:-10%;
-  margin-left: 5%;
-  width:100%;
+.heading p:nth-child(2){
+  font-size:60px;
 }
 .caption{
   font:21px "Nixie One";
   text-align:left;
   color:white;
+}
+@media screen and (max-width:768px){
+  .heading{
+    font: 55px/45px "Patua One";
+    color:#404040;
+  }
+  .heading p:nth-child(2){
+    font-size:40px;
 }
