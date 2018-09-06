@@ -1,0 +1,40 @@
+html{
+background-color:#404040;
+height:99%;
+width:100%;
+}
+
+body{
+  /* position:relative; */
+  background-color:#EF9393;
+  margin:10px;
+  height: 98%;
+  width:100%;
+}
+hr{
+  margin:20px 0px;
+  height:5px;
+  border:none;
+  width:90%;
+  background-color:#404040;
+}
+.heading{
+  font: 100px/90px "Patua One";
+  color:#404040;
+}
+.heading p{
+  margin:0px;
+}
+main{
+  position:absolute;
+  top:50%;
+  height:20%;
+  margin-top:-10%;
+  margin-left: 5%;
+  width:100%;
+}
+.caption{
+  font:21px "Nixie One";
+  text-align:left;
+  color:white;
+}
