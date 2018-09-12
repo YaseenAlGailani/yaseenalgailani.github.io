@@ -26,6 +26,7 @@ main .recentWork, main .myTools, main .about {
 }
 
 .navbtn {
+  cursor: pointer;
   align-self: flex-start;
   display: inline-block;
   font: 0.8em "Montserrat";
@@ -37,7 +38,8 @@ main .recentWork, main .myTools, main .about {
   margin-right: 10px;
   color: #707070;
 }
-.navbtn .cont {
+
+.cont {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -46,9 +48,10 @@ main .recentWork, main .myTools, main .about {
   height: 7px;
   border: solid 1px grey;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 5px;
 }
-.navbtn .ccl1, .navbtn .ccl2, .navbtn .ccl3 {
+
+.ccl1, .ccl2, .ccl3 {
   position: absolute;
   width: 7px;
   height: 7px;
@@ -109,11 +112,22 @@ main .recentWork .description {
   font: 0.8em/1.1em "Montserrat";
   color: #707070;
 }
+main .recentWork .description a {
+  display: block;
+  margin: 30px auto;
+  text-decoration: none;
+  color: #707070;
+  text-align: center;
+}
 
 footer .ftrbtn {
   display: inline-block;
   color: #707070;
   margin-right: 10px;
+}
+footer .ftrbtn:hover {
+  position: relative;
+  bottom: 4px;
 }
 footer .ftrbtn i {
   display: inline;
