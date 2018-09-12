@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Patua+One|Nixie+One" rel="stylesheet">
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" media="screen and (max-width:768px)" href="small.css">
     <meta charset="utf-8">
-    <title>YG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/stylesheets/stylesheet.css">
+    <link rel="stylesheet" media="screen and (min-width: 769px)" href="public/stylesheets/wide_view.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/stylesheets/anim.css">
+    <title>Yaseen</title>
   </head>
   <body>
+    <nav>
+      <div class="navbtn"><div class="cont"><div class="ccl1"></div></div><p onmousedown="viewer(1)">About me</p></div>
+      <div class="navbtn"><div class="cont"><div class="ccl2"></div></div><p onmousedown="viewer(2)">My tools</p></div>
+      <div class="navbtn"><div class="cont"><div class="ccl3"></div></div><p onmousedown="viewer(3)">Recent work</p></div>
+    </nav>
+
     <main>
-      <div class="heading">
-        <p>Web Design</p>
-        <p>& Development</p>
-      </div>
-      <hr>
-      <div class="caption">
-        <p>&lt; Under Development &gt;</p>
-      </div>
+      <section class="intro">
+        <p>Hi there!</p>
+        <p>I'm Yaseen, a Front End Developer.</p>
+        <p>I believe that “Simplicity is the ultimate sophistication”, do you?</p>
+      </section>
+      <div class="vLine"></div>
+      <section class="about">
+        <div class="photo"><img src="public/photos/profile_photo.jpg" alt="My Profile photo">  </div>
+        <article class="aboutText">
+          <p>I’m very passionate about Web Design and Development. I have good experience in Web design and building responsive web pages.</p>
+            <p>I have more than three years of experience in customer technical support in IT, which allowed me to gain excellent communication and time management skills.</p>
+            <p>I’m interested in Front-End Development where I can hone my Design skills and love for creativity and I’m looking for Junior Front End Developer positions.</p>
+            <p>Follow me on my GitHub profile to see the current projects I’m working on.</p>
+        </article>
+      </section>
+      <section class="myTools">
+        <div class="toolsCont">
+          <div class="tools">
+            <p>Front End:</p>
+            <p>HTML | CSS | JavaScript | SASS | AJAX</p>
+          </div>
+          <div class="tools">
+            <p>Backend:</p>
+            <p>Node.js | Express.js | MongoDB</p>
+          </div>
+          <div class="tools">
+            <p>Sometimes I use:</p>
+            <p>Bootstrap | Semantic UI | Fontawesome | jQuery</p>
+          </div>
+        </div>
+      </section>
+      <section class="recentWork">
+        <div class="projectImage">
+            <img src="public/photos/egytek_project.jpg" alt="Project Image">
+        </div>
+        <article class="description">
+          <p>EGYTEK:<p>
+          <p>Company Website and Logo.</p>
+          <p>My client wanted a logo design and a website that that are simple and to the point.</p>
+          <p>They required a limited colour scheme with a website that it is easy to navigate and provides info about the company and contact details.</p>
+          <p>I designed a single colour logo which met their expectations and build a single page, responsive static website which suited my client’s need.</p>
+          <p>Happy to say that my client was satisfied with the results.</p>
+        </div>
+      </article>
     </main>
+
+    <footer>
+      <div class="ftrbtn"><a href="https://github.com/YaseenAlGailani" target="_blank"><i class="fab fa-github"></i>Follow me on GitHub</a></div>
+      <div class="ftrbtn"><a href="https://www.behance.net/YaseenAlGailani" target="_blank" ><i class="fab fa-behance"></i>Follow me on Behance</a></div>
+    </footer>
+
+
+    <script type="text/javascript" src="public/scripts/script.js"></script>
   </body>
 </html>

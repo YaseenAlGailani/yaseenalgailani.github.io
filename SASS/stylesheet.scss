@@ -1,0 +1,150 @@
+$font:"Montserrat";
+$PC-grey: #707070;
+
+
+html{
+  height:100%;
+  display: flex;
+}
+body{
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-self: center;
+  font-family:$font;
+  height:90%;
+  margin:0px 50px;
+  width:100%;
+}
+
+%sections{
+  display:none;
+  position:relative;
+  flex-direction:column;
+  flex:2;
+  align-items: center;
+  justify-content: center;
+  min-width:250px;
+  margin:50px 0px;
+}
+
+.navbtn{
+  align-self: flex-start;
+  display:inline-block;
+  font:0.8em $font;
+  color:$PC-grey;
+  p{
+    cursor: pointer;
+    display:inline-block;
+    margin-right:10px;
+    color:$PC-grey;
+  }
+  .cont{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    background-color:$PC-grey;
+    width:7px;
+    height:7px;
+    border:solid 1px grey;
+    border-radius:50%;
+    margin-right: 10px;
+  }
+  .ccl1, .ccl2, .ccl3{
+    position:absolute;
+    width:7px;
+    height:7px;
+    background-color: transparent;
+    border-radius: 50%;
+    border:solid 1px $PC-grey;
+  }
+}
+
+main{
+  opacity:0;
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-y: scroll;
+  .intro{
+    font:0.8em/1.1em $font;
+    color:$PC-grey;
+    flex:2;
+    align-self: center;
+    margin:0px 20px 0px 0px;
+    min-width:250px;
+    p{
+      margin:7px 0px;
+    }
+  }
+
+  .about{
+    @extend %sections;
+    .photo img{
+      width:170px;
+      border:solid 1px $PC-grey;
+      border-radius: 50%
+    }
+    .aboutText{
+      padding:35px 0px;
+      p{
+        text-align: left;
+        font:0.8em/1.1em $font;
+        color:$PC-grey;
+      }
+    }
+  }
+  .myTools{
+    @extend %sections;
+    .toolsCont{
+
+    }
+    .tools{
+      margin:20px 0px;
+    p{
+      text-align: left;
+      font:0.8em/1.1em $font;
+      color:$PC-grey;
+      margin:2px 0px;
+    }
+  }
+  }
+  .recentWork{
+    @extend %sections;
+    .projectImage{
+    width:70%;
+      img{
+        width:100%;
+      }
+    }
+    .description{
+      text-align: left;
+      font:0.8em/1.1em $font;
+      color:$PC-grey;
+    }
+  }
+}
+footer{
+  .ftrbtn{
+    display:inline-block;
+    color:$PC-grey;
+    margin-right:10px;
+    i{
+      display:inline;
+      border: solid 1px $PC-grey;
+      border-radius: 50%;
+      padding:3px;
+      margin:5px;
+      width:15px;
+      height:15px;
+    }
+    a{
+      margin:7px 0px;
+      text-decoration: none;
+      display:inline-block;
+      font-size: 0.8em;
+      color:$PC-grey;
+    }
+  }
+}

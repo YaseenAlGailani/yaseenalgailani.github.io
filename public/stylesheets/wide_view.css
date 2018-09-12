@@ -1,0 +1,16 @@
+
+  .aboutText{
+    width:75%;
+  }
+  .description{
+    width:70%;
+  }
+  .vLine{
+    display:none;
+    height:600px;
+    width:1px;
+    background-color:#c4c4c4;
+  }
+  .vLdisplay{
+    display:block !important;
+  }
