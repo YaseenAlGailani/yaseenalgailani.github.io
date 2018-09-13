@@ -6,6 +6,7 @@
     width:70%;
   }
   .vLine{
+    align-self: center;
     display:none;
     height:400px;
     width:1px;
