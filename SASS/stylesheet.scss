@@ -67,7 +67,7 @@ main{
   display:flex;
   flex-wrap: wrap;
   flex-direction: row;
-  overflow-y: scroll;
+  overflow-y:auto;
   .intro{
     font:0.8em/1.1em $font;
     color:$PC-grey;
