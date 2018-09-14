@@ -14,6 +14,11 @@ body {
   width: 100%;
 }
 
+h2 {
+  font-weight: normal;
+  font: 16px "Montserrat";
+}
+
 main .recentWork, main .myTools, main .about {
   display: none;
   position: relative;
@@ -85,7 +90,7 @@ main .about .photo img {
   border-radius: 50%;
 }
 main .about .aboutText {
-  padding: 35px 0px;
+  padding: 25px 0px;
 }
 main .about .aboutText p {
   text-align: left;

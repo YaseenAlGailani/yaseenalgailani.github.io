@@ -16,7 +16,10 @@ body{
   margin:0px 50px;
   width:100%;
 }
-
+h2 {
+  font-weight: normal;
+  font:16px $font;
+}
 %sections{
   display:none;
   position:relative;
@@ -88,7 +91,7 @@ main{
       border-radius: 50%
     }
     .aboutText{
-      padding:35px 0px;
+      padding:25px 0px;
       p{
         text-align: left;
         font:0.8em/1.1em $font;
