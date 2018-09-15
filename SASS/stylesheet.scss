@@ -1,6 +1,9 @@
 $font:"Montserrat";
 $PC-grey: #707070;
 
+nav, main, section{
+  display:block;
+}
 
 html{
   height:100%;
@@ -19,6 +22,7 @@ body{
 h2 {
   font-weight: normal;
   font:16px $font;
+  color:$PC-grey;
 }
 %sections{
   display:none;
