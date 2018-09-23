@@ -5,23 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/stylesheets/stylesheet.css">
     <link rel="stylesheet" media="screen and (min-width: 769px)" href="public/stylesheets/wide_view.css">
+    <link rel="stylesheet" href="public/stylesheets/nav_btn.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="public/stylesheets/anim.css">
     <title>Yaseen</title>
   </head>
   <body>
-    <nav>
+    <!-- <nav>
       <div onmousedown="viewer(1)" class="navbtn"><div class="cont"><div class="ccl1"></div></div><p>About me</p></div>
       <div onmousedown="viewer(2)" class="navbtn"><div class="cont"><div class="ccl2"></div></div><p>My tools</p></div>
       <div onmousedown="viewer(3)" class="navbtn"><div class="cont"><div class="ccl3"></div></div><p>Recent work</p></div>
-    </nav>
+    </nav> -->
 
     <main>
       <section class="intro">
-        <h2>Hi there!</h2>
-        <p>I'm Yaseen, a Front End Developer.</p>
-        <p>I believe that “Simplicity is the ultimate sophistication”, do you?</p>
+        <div class="cnt-left">
+          <h1>Hi there!</h1>
+          <p>I'm Yaseen, a Front End Developer.</p>
+          <p>I believe that “Simplicity is the ultimate sophistication”, don't you?</p>
+          <p class="mini">My portfolio is still under development, sorry.</p>
+        </div>
+        <div class="cont-right">
+          <div class="cnt-1">
+            <div onclick="togg()" class="mainBtnOut navPulseIn"><div class="mainBtnIn navPulse"></div></div>
+          </div>
+          <div class="cnt-2">
+            <div class="nav-btn"><i class="btn"></i>
+             <p class="btn-p">About me</p>
+            </div>
+            <div class="nav-btn"><i class="btn"></i>
+             <p class="btn-p">My tools</p>
+            </div>
+            <div class="nav-btn"><i class="btn"></i>
+             <p class="btn-p">Recent work</p>
+            </div>
+          </div>
+        </div>
       </section>
       <div class="vLine"></div>
       <section class="about">
@@ -37,6 +57,10 @@
       </section>
       <section class="myTools">
         <div class="toolsCont">
+          <div>
+            <p>I like to write a clean, well-crafted and efficient code with high regard to detail.</p>
+
+          </div>
           <div class="tools">
             <h2>Front End:</h2>
             <p>HTML | CSS | JavaScript | SASS | AJAX</p>
@@ -67,11 +91,11 @@
       </section>
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="ftrbtn"><a href="https://github.com/YaseenAlGailani" target="_blank"><i class="fab fa-github"></i>Follow me on GitHub</a></div>
       <div class="ftrbtn"><a href="https://www.behance.net/YaseenAlGailani" target="_blank" ><i class="fab fa-behance"></i>Follow me on Behance</a></div>
       <div class="ftrbtn"><a href="https://www.linkedin.com/in/yaseenalgailani" target="_blank" ><i class="fab fa-linkedin-in"></i>Contact me on LinkedIn</a></div>
-    </footer>
+    </footer> -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125699599-1"></script>

@@ -7,3 +7,15 @@ function viewer(index) {
   content[index].classList.add("display");
   vline.classList.add("vLdisplay");
 }
+
+
+function togg() {
+  var mainBtnOut=document.querySelector(".mainBtnOut");
+  var mainBtnIn=document.querySelector(".mainBtnIn");
+  var navBtn=document.querySelectorAll(".nav-btn");
+  mainBtnOut.classList.toggle("navPulseIn");
+  mainBtnIn.classList.toggle("navPulse");
+  for (var i=0;i<navBtn.length;i++){
+    navBtn[i].classList.toggle("navDisplay");
+  }
+}

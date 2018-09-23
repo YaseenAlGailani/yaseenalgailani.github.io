@@ -1,4 +1,4 @@
-nav, main, section {
+nav, main, section, article {
   display: block;
 }
 
@@ -10,12 +10,19 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-self: center;
   font-family: "Montserrat";
   height: 90%;
   margin: 0px 50px;
   width: 100%;
+}
+
+h1 {
+  font-weight: normal;
+  font: 50px "Montserrat";
+  color: #707070;
+  margin: 10px 0px;
 }
 
 h2 {
@@ -79,6 +86,7 @@ main {
   overflow-y: auto;
 }
 main .intro {
+  display: flex;
   font: 0.8em/1.1em "Montserrat";
   color: #707070;
   flex: 2;
@@ -86,7 +94,7 @@ main .intro {
   margin: 0px 20px 0px 0px;
   min-width: 250px;
 }
-main .intro p {
+main .intro .cnt-left p {
   margin: 7px 0px;
 }
 main .about .photo img {

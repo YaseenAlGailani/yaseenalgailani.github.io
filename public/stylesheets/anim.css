@@ -4,7 +4,7 @@
   height:7px;
   background-color: transparent;
   border-radius: 50%;
-  border:solid 1px $PC-grey;
+  border:solid 1px #707070;
   animation-name:pulse;
   animation-iteration-count:infinite;
 }
@@ -56,8 +56,8 @@ main{
   position:relative;
   left:15px;
   animation-name: display;
-  animation-delay:0.3s;
-  animation-duration:1.2s;
+  animation-delay:0.7s;
+  animation-duration:1.7s;
   animation-fill-mode: forwards;
 }
 @keyframes display {

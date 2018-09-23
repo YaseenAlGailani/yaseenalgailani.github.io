@@ -1,7 +1,7 @@
 $font:"Montserrat";
 $PC-grey: #707070;
 
-nav, main, section{
+nav, main, section, article{
   display:block;
 }
 
@@ -12,12 +12,18 @@ html{
 body{
   display:flex;
   flex-direction: column;
-  justify-content:space-between;
+  justify-content:center;
   align-self: center;
   font-family:$font;
   height:90%;
   margin:0px 50px;
   width:100%;
+}
+h1{
+  font-weight: normal;
+  font:50px $font;
+  color:$PC-grey;
+  margin:10px 0px;
 }
 h2 {
   font-weight: normal;
@@ -76,13 +82,14 @@ main{
   flex-direction: row;
   overflow-y:auto;
   .intro{
+    display:flex;
     font:0.8em/1.1em $font;
     color:$PC-grey;
     flex:2;
     align-self: center;
     margin:0px 20px 0px 0px;
     min-width:250px;
-    p{
+    .cnt-left p{
       margin:7px 0px;
     }
   }
