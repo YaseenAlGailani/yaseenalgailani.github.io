@@ -79,7 +79,7 @@ p{
 @import 'introBtn';
 .nav{
   position:absolute;
-  top:-50px;
+  top:20px;
   text-align: center;
   margin:auto;
   width:100%;
@@ -121,6 +121,9 @@ p{
   transition:0.4s;
   &:hover{
     border-style:dashed;
+  }
+  i{
+    color:$p-grey;
   }
 }
 .profile-container{

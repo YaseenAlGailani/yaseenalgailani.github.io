@@ -411,7 +411,7 @@ button {
 }
 .nav {
   position: absolute;
-  top: -50px;
+  top: 20px;
   text-align: center;
   margin: auto;
   width: 100%;
@@ -456,6 +456,9 @@ button {
 }
 .side-circle:hover {
   border-style: dashed;
+}
+.side-circle i {
+  color: #707070;
 }
 
 .profile-container {
