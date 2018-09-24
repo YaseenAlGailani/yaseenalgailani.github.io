@@ -5,67 +5,92 @@ $p-grey:#707070;
 $p-lightgrey:#EAEAEA;
 $p-red:#D34949;
 
-.outline{
+outline{
   outline:solid 1px red;
 }
-
-
+a{
+  color:inherit;
+  text-decoration: none;
+}
+.active{
+  box-sizing: content-box;
+  border:solid 1px $p-lightgrey
+}
 .html-intro{
   align-items: center;
   display:flex;
   height:100%;
   justify-content: center;
 }
-
+.html-all{
+  height:100%;
+}
 .body-intro{
   align-items: center;
   display:flex;
   width:80%;
 }
-.html-all{
+.body-all{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   height:100%;
 }
-.body-all{
 
-}
 .intro-header{
   color:$p-red;
   font: 60px/60px $font-h;
   margin:10px 0px;
 }
 
+h2{
+  color:$p-grey;
+  font: 30px/30px $font-h;
+  margin:10px 0px;
+}
+
 p{
   color:$p-grey;
-  font:16px/16px $font-p;
+  font:14px/16px $font-p;
   margin:2px 0px;
 }
 .main{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  width:100%;
+  width:90%;
+}
+.main-all{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:90%;
+  margin:50px 20px;
 }
 
 .container-left, .container-right{
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   flex:auto;
   padding:0px 20px;
 }
 
 @import 'introBtn';
 .nav{
+  position:absolute;
+  top:-50px;
   text-align: center;
   margin:auto;
-  width:350px;
+  width:100%;
   // outline:solid red 1px;
 }
 .nav-btn {
   display: inline-block;
   cursor: pointer;
   border-radius: 20px;
-  height: 20px;
+  margin:0px 10px;
+  height: 16px;
   text-align: left;
   transition: 0.2s;
   &:hover {
@@ -78,6 +103,7 @@ p{
 }
 .side-links{
   margin-top: -75px;
+  left:20px;
   position:fixed;
   top:50%;
   z-index:1000;
@@ -92,6 +118,10 @@ p{
   width:35px;
   height:35px;
   margin:10px 0px;
+  transition:0.4s;
+  &:hover{
+    border-style:dashed;
+  }
 }
 .profile-container{
   align-self: flex-end;
@@ -102,5 +132,5 @@ p{
   border-radius: 50%;
 }
 .about-text{
- max-width:500px;
+ max-width:400px;
 }
