@@ -1,3 +1,14 @@
+function togg(){
+  var mainBtnOut=document.querySelector(".mainBtnOut");
+  var mainBtnIn=document.querySelector(".mainBtnIn");
+  var navBtn=document.querySelectorAll(".nav-btn");
+  mainBtnOut.classList.toggle("navPulseIn");
+  mainBtnIn.classList.toggle("navPulse");
+  for (var i=0;i<navBtn.length;i++){
+    navBtn[i].classList.toggle("navDisplay");
+  }
+}
+
 window.onload=function(){
 
     function viewer(index) {
@@ -11,16 +22,7 @@ window.onload=function(){
     }
 
 
-    function togg() {
-      var mainBtnOut=document.querySelector(".mainBtnOut");
-      var mainBtnIn=document.querySelector(".mainBtnIn");
-      var navBtn=document.querySelectorAll(".nav-btn");
-      mainBtnOut.classList.toggle("navPulseIn");
-      mainBtnIn.classList.toggle("navPulse");
-      for (var i=0;i<navBtn.length;i++){
-        navBtn[i].classList.toggle("navDisplay");
-      }
-    }
+
 
 
     (function(){
