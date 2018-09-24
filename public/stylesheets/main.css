@@ -1,0 +1,436 @@
+.outline {
+  outline: solid 1px red;
+}
+
+.html-intro {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+.body-intro {
+  align-items: center;
+  display: flex;
+  width: 80%;
+}
+
+.html-all {
+  height: 100%;
+}
+
+.intro-header {
+  color: #D34949;
+  font: 60px/60px "Sanchez", serif;
+  margin: 10px 0px;
+}
+
+p {
+  color: #707070;
+  font: 16px/16px "Quicksand", sans-serif;
+  margin: 2px 0px;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.container-left, .container-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: auto;
+  padding: 0px 20px;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.cbc {
+  display: block;
+  cursor: pointer;
+  border-radius: 20px;
+  height: 20px;
+  text-align: left;
+  transition: 0.2s;
+}
+.cbc:hover {
+  background-color: #EAEAEA;
+}
+.cbc:active .cb {
+  background-color: #D34949;
+  transition: 0.3s;
+}
+
+.ibc {
+  display: block;
+  cursor: pointer;
+  text-align: left;
+  z-index: 1;
+}
+
+.cb,
+.ibo {
+  background-color: #707070;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 20px;
+  outline: none;
+  width: 20px;
+}
+
+.ibo:hover {
+  animation: none;
+  background-color: #D34949;
+}
+
+.ibo:active {
+  background-color: #707070;
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.ibi {
+  background-color: transparent;
+  box-sizing: border-box;
+  border: solid 1px #707070;
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+}
+
+.ibo:active .ibi {
+  border-color: #707070;
+}
+
+.ibo:hover .ibi {
+  animation: none;
+  border-color: #D34949;
+}
+
+.iboPulse {
+  animation-name: pulseIn;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.ibiPulse {
+  animation-name: pulseOut;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulseIn {
+  25% {
+    transform: scale(0.9);
+    background-color: #D34949;
+  }
+  45% {
+    transform: scale(1);
+    background-color: #707070;
+  }
+}
+@keyframes pulseOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+/* ------------------------------------- */
+.ibCont {
+  height: 160px;
+  width: 200px;
+}
+
+.intro {
+  z-index: 0;
+}
+
+.dispBlk {
+  display: block;
+}
+
+.ibM {
+  position: relative;
+  top: 70px;
+}
+
+.cbT {
+  opacity: 0;
+  display: none;
+  position: relative;
+  top: 47px;
+  left: 0px;
+}
+
+.cbTM {
+  animation-name: cbTM;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0;
+}
+
+@keyframes cbTM {
+  50% {
+    top: -3px;
+    left: 50px;
+  }
+  100% {
+    top: 7px;
+    left: 40px;
+    opacity: 1;
+  }
+}
+.cbTClear {
+  animation-name: cbTClear;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cbTClear {
+  0% {
+    top: 7px;
+    left: 40px;
+    opacity: 1;
+  }
+  30% {
+    top: -3px;
+    left: 60px;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    top: 47px;
+    left: 0px;
+  }
+}
+.cbM {
+  opacity: 0;
+  display: none;
+  position: relative;
+  top: 27px;
+  left: 0px;
+}
+
+.cbMM {
+  animation-name: cbMM;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes cbMM {
+  50% {
+    left: 50px;
+  }
+  100% {
+    opacity: 1;
+    left: 40px;
+  }
+}
+.cbMClear {
+  animation-name: cbMClear;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cbMClear {
+  0% {
+    top: 27;
+    left: 40px;
+    opacity: 1;
+  }
+  30% {
+    top: 27;
+    left: 60px;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    top: 27;
+    left: 0px;
+    opacity: 0;
+  }
+}
+.cbB {
+  opacity: 0;
+  display: none;
+  position: relative;
+  top: 7px;
+  left: 0px;
+}
+
+.cbBM {
+  animation-name: cbBM;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes cbBM {
+  50% {
+    top: 57px;
+    left: 50px;
+  }
+  100% {
+    top: 47px;
+    left: 40px;
+    opacity: 1;
+  }
+}
+.cbBClear {
+  animation-name: cbBClear;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cbBClear {
+  0% {
+    top: 47px;
+    left: 40px;
+    opacity: 1;
+  }
+  30% {
+    top: 57px;
+    left: 60px;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    top: 7px;
+    left: 0px;
+    opacity: 0;
+  }
+}
+.dispBlk {
+  display: block;
+}
+
+.btnTxt {
+  color: #707070;
+  display: inline;
+  opacity: 1;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0 10px 0 10px;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.txtCntOut {
+  width: 100px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.txtCntIn {
+  position: relative;
+  left: -10px;
+  vertical-align: middle;
+  display: inline-block;
+  width: 0;
+  opacity: 0;
+  height: 20px;
+  overflow-x: hidden;
+  background-color: #EAEAEA;
+  border-radius: 20px;
+}
+
+.txtRvl {
+  animation-name: txtReveal;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes txtReveal {
+  50% {
+    left: 0px;
+    width: 100px;
+  }
+  100% {
+    left: 0px;
+    width: 100px;
+    opacity: 1;
+  }
+}
+.nav {
+  text-align: center;
+  margin: auto;
+  width: 350px;
+}
+
+.nav-btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  height: 20px;
+  text-align: left;
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: #EAEAEA;
+}
+.nav-btn:active .cb {
+  background-color: #D34949;
+  transition: 0.3s;
+}
+
+.side-links {
+  margin-top: -75px;
+  position: fixed;
+  top: 50%;
+  z-index: 1000;
+}
+
+.side-circle {
+  align-items: center;
+  border: solid 1px #707070;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin: 10px 0px;
+}
+
+.profile-container {
+  align-self: flex-end;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+/*# sourceMappingURL=main.css.map */
