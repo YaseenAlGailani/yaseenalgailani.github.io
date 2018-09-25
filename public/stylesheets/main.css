@@ -20,7 +20,10 @@ a {
 }
 
 .html-all {
+  align-items: center;
+  display: flex;
   height: 100%;
+  justify-content: center;
 }
 
 .body-intro {
@@ -33,25 +36,17 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100%;
+  width: 80%;
 }
 
-.intro-header {
-  color: #D34949;
-  font: 60px/60px "Sanchez", serif;
-  margin: 10px 0px;
-}
-
-h2 {
-  color: #707070;
-  font: 30px/30px "Sanchez", serif;
-  margin: 10px 0px;
-}
-
-p {
-  color: #707070;
-  font: 14px/16px "Quicksand", sans-serif;
-  margin: 2px 0px;
+.body-tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 80%;
 }
 
 .main {
@@ -61,12 +56,63 @@ p {
   width: 90%;
 }
 
-.main-all {
+.main-about {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
   margin: 50px 20px;
+}
+
+.main-tools {
+  align-items: center;
+}
+.main-tools .section-tools {
+  margin: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-tools p {
+  margin: 5px 0;
+}
+
+.intro-header {
+  color: #D34949;
+  font: 60px/60px "Sanchez", serif;
+  margin: 10px 0px;
+}
+
+h2 {
+  font-weight: normal;
+  color: #707070;
+  font: 30px/30px "Sanchez", serif;
+  margin: 10px 0px;
+}
+
+.wd-header {
+  color: #707070;
+  font: 30px/30px "Pacifico", cursive;
+  margin: 10px 0px;
+}
+
+.mImp-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  color: #707070;
+  font: 14px/16px "Quicksand", sans-serif;
+  margin: 2px 0px;
+}
+
+.hl {
+  display: block;
+  width: 2px;
+  height: 45px;
+  background-color: #EAEAEA;
+  margin: 5px 0 10px 0;
 }
 
 .container-left, .container-right {
@@ -435,7 +481,7 @@ button {
 }
 
 .side-links {
-  margin-top: -75px;
+  margin-top: -85px;
   left: 10px;
   position: fixed;
   top: 50%;
@@ -473,6 +519,27 @@ button {
 
 .about-text {
   max-width: 400px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  height: 50px;
+  width: 70%;
+  background-color: #EAEAEA;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+}
+.footer a {
+  font: 12px/12px "Quicksand", sans-serif;
+  text-decoration: none;
+  color: #707070;
+  margin: 50px 5px;
+}
+
+.ul {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
