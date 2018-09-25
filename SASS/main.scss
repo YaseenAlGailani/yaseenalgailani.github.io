@@ -5,6 +5,7 @@ $font-wd:'Pacifico', cursive;
 $p-grey:#707070;
 $p-lightgrey:#EAEAEA;
 $p-red:#D34949;
+$p-bgrey:#F2F2F2;
 
 outline{
   outline:solid 1px red;
@@ -24,6 +25,11 @@ h3{
   color:$p-grey;
   font: 21px/21px $font-h;
   margin:10px 0px;
+}
+p{
+  color:$p-grey;
+  font:14px/18px $font-p;
+  margin:2px 0px;
 }
 .active{
   box-sizing: content-box;
@@ -93,7 +99,7 @@ h3{
   max-width: 80%;
 
   p{
-    margin:5px 0;
+    margin:10px 0;
   }
   hr{
     border:solid 1px $p-lightgrey;
@@ -102,7 +108,7 @@ h3{
   }
 }
 .p-head{
-  font:15px/15px $font-h;
+  font:15px/18px $font-h;
 }
 .section-I{
   max-width: 80%;
@@ -200,11 +206,7 @@ h3{
   text-transform: uppercase;
 }
 
-p{
-  color:$p-grey;
-  font:14px/16px $font-p;
-  margin:2px 0px;
-}
+
 .hl{
   display:block;
   width:2px;
@@ -311,3 +313,5 @@ p{
 .ul{
   text-decoration: underline;
 }
+@import 'introBtn';
+@import 'mini';

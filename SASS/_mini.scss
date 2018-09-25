@@ -6,9 +6,7 @@
   background-color:$p-grey;
   margin:0px 5px;
 }
-.miniTxt p{
-  margin:0px;
-}
+
 .mini{
   display:block;
   white-space:nowrap;
@@ -32,17 +30,17 @@
   opacity:1;
   left:0px;
 }
-
-
-.miniTxt{
+p.mini-txt{
+  margin:0px;
+}
+.mini-txt{
   display:none;
   position:relative;
   color:$p-grey;
-  left:0px;
   font-size:15px;
-  line-height:20px;
-  margin:0px 12px;
-  padding:3px 0px;
+  line-height:17px;
+  padding:3px 12px;
+  margin:0px;
   vertical-align:middle;
   opacity:0;
 }
@@ -74,4 +72,5 @@
 }
 .disp{
   display:inline-block;
+  opacity:1;
 }
