@@ -1,14 +1,120 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head >
-  <link rel="stylesheet" href="public/stylesheets/main.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <title>Yaseen | Recent work</title>
-  <link href="https://fonts.googleapis.com/css?family=Sanchez|Quicksand|Pacifico" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-</head>
-  <body>
-    
+<html lang="en" dir="ltr" class="html">
+  <head >
+    <link rel="stylesheet" href="public/stylesheets/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Yaseen | Recent work</title>
+    <link href="https://fonts.googleapis.com/css?family=Sanchez|Quicksand|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body class="body">
+    <header class="nav">
+      <nav>
+        <a href="aboutme.html"><button type="button" name="button" class="nav-btn"><div class="cb"></div><p class="btnTxt">About me</p></button></a>
+        <a href="mytools.html"><button type="button" name="button" class="nav-btn"><div class="cb"></div><p class="btnTxt">My tools</p></button></a>
+        <button type="button" name="button" class="nav-btn active"><div class="cb"></div><p class="btnTxt">Recent work</p></button>
+      </nav>
+    </header>
+    <aside class="outline side-links">
+      <div class="side-circle">
+        <a href="https://www.linkedin.com/in/yaseenalgailani/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="side-circle">
+        <a href="https://github.com/YaseenAlGailani"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="side-circle">
+        <a href="https://www.behance.net/YaseenAlGailani"><i class="fab fa-behance"></i></a>
+      </div>
+      <div class="side-circle">
+        <a href="mailto:yaseen.algailani@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+    </aside>
+    <main class="main">
+      <article class="article-project">
+        <section class="section-I">
+          <h2 class="t-header">Project Details</h2>
+          <div class="row">
+            <div class="col-left">
+              <p class="p-head">Company</p>
+            </div>
+            <div class="col-right">
+              <p>EGYTEK</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-left">
+              <p class="p-head">Service</p>
+            </div>
+            <div class="col-right">
+              <p>Company Website and Logo</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-left">
+              <p class="p-head">Brief</p>
+            </div>
+            <div class="col-right">
+              <p>My client wanted a logo design and a website that that are simple and to the point.<br>
+              They required a limited colour scheme with a website that it is easy to navigate and provides info about the company and contact details.</p>
+              <p>I designed a single colour logo which met their expectations and build a single page, responsive static website which suited my client’s needs.</p>
+              <p>Happy to say that my client was satisfied with the results.</p>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section class="section-II">
+          <h3>First, let's see the logo</h3>
+          <div class="row">
+            <div class="col-left">
+              <img src="public/photos/EGYTEKlogo.svg" alt="EGYTEK logo">
+            </div>
+            <div class="col-right">
+
+            </div>
+          </div>
+          <div class="row">
+              <img class="brand-image"src="public/photos/Egytek-Ddisplay.jpg" alt="Branding design">
+          </div>
+        </section>
+        <hr>
+        <section class="section-III">
+          <h3>Next, the website design</h3>
+          <div class="row">
+              <img class="project-image" src="public/photos/egytek_project.jpg" alt="A picture of the Website design ">
+          </div>
+          <div class="row">
+              <p class="mini-out">Simplicity was the main ingredient</p>
+              <p class="p-head">“We want it straight forward - This is who we are, this is what we do and here’s our contact details”</p>
+          </div>
+          <div class="row-res">
+            <div class="col-left">
+                <img class="res-image"src="public/photos/egytek-responsive.png" alt="mobile version of the website">
+            </div>
+            <div class="col-right">
+              <p class="p-head">Stack used:</p>
+              <p>HTML, CSS and JS</p>
+              <p>+ Fontawesome</p>
+              <p>+ Google Fonts</p>
+              <a href="http://www.egytek-solutions.com"><button class="visit-project" type="button" name="button">Visit Website</button></a>
+            </div>
+          </div>
+          <div class="row-foot">
+            <p class="p-head">And that was all</p>
+          </div>
+        </section>
+      </article>
+
+      <div class="row-note">
+        <div class="mail-circle">
+          <a href="mailto:yaseen.algailani@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+        </div>
+        <p>I'm available for your next project</p>
+      </div>
+
+    </main>
+    <footer class="footer">
+      <a href="aboutme.html">About me</a> <a href="mytools.html">My tools</a>
+    </footer>
   </body>
 </html>
