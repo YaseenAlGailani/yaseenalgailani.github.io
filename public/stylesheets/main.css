@@ -28,11 +28,12 @@ p {
 }
 
 .alert-m {
+  text-align: center;
   color: white;
   background: linear-gradient(30deg, #D34949, #B24592);
   border-radius: 25px;
   padding: 2px 10px;
-  width: 400px;
+  max-width: 400px;
 }
 
 .active {
