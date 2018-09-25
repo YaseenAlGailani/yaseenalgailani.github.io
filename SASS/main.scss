@@ -91,6 +91,9 @@ p{
   flex-direction: column;
   align-items: center;
 }
+.inline-p{
+  display: inline-block;
+}
 .article-project{
   box-sizing: border-box;
   border:solid 1px $p-lightgrey;
@@ -213,6 +216,21 @@ p{
   height:45px;
   background-color: $p-lightgrey;
   margin:5px 0 10px 0;
+}
+.hls{
+  display:block;
+  width:2px;
+  height:15px;
+  background-color: $p-lightgrey;
+  margin:10px 0;
+}
+.hlt{
+  display:block;
+  width:5px;
+  height:5px;
+  border-radius: 50%;
+  background-color: $p-lightgrey;
+  margin:5px 0;
 }
 
 .container-left, .container-right{
