@@ -1,3 +1,4 @@
+// --------------- Intro btn ---------------
 var txtCntIn=document.querySelectorAll(".txtCntIn");
 var introBtns=document.querySelectorAll(".intro");
 var mStylesOut=["cbTM","cbMM","cbBM"];
@@ -30,3 +31,4 @@ function clearStyles(){
     }
   locker=null;
 }
+// --------------- Intro Page ---------------

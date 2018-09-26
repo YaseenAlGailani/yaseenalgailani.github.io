@@ -1,0 +1,40 @@
+// ----------- side-circle-anim -----------
+.side-circle-anim{
+  position:relative;
+  left:-50px;
+  opacity:0px;
+  animation-name:side-circle-in;
+  animation-duration:0.7s;
+  animation-fill-mode:forwards;
+}
+.c-2{animation-delay:0.4s;}
+.c-3{animation-delay:0.6s;}
+.c-4{animation-delay:0.2s;}
+
+@keyframes side-circle-in{
+  0%{left:-50px;opacity:0;}
+  60%{left:5px;}
+  100%{left:0;opacity:1;}
+
+}
+// ----------- intro-head-anim -----------
+.intro-head-anim{
+  animation-name:intro-head-in;
+  animation-duration: 1s;
+  animation-delay:1s;
+  animation-fill-mode:forwards;
+}
+@keyframes intro-head-in{
+  0%{left:30px;opacity:0;}
+  100%{opacity:1;transform:translate(-30px,0);}
+}
+.intro-btn-anim{
+  animation-name:intro-btn-in;
+  animation-duration:1s;
+  animation-delay:2s;
+  animation-fill-mode:forwards;
+}
+@keyframes intro-btn-in{
+  0%{opacity:0;}
+  100%{opacity:1;}
+}
