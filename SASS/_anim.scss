@@ -39,7 +39,7 @@
   100%{opacity:1;}
 }
 // ----------- intro-main-anim -----------
-.intro-main-anim-out{
+.intro-main-out{
   animation-name:intro-main-out;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -95,6 +95,7 @@
 }
 // ----------- mytools-main-anim -----------
 .main-in{
+  transform-origin: top;
   animation:1s forwards main-in;
 }
 @keyframes main-in{
@@ -106,6 +107,7 @@
 .main-out{
   top:0;
   opacity:1;
+  transform-origin: top;
   animation:0.7s 0.5s forwards main-out;
 }
 @keyframes main-out{

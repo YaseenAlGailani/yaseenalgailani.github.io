@@ -47,7 +47,7 @@
               </div>
             </div>
           </button>
-          <button name="My tools" onclick="navigate(['intro-main'],['intro-main-anim-out'],'mytools')" class="intro cbc cbM">
+          <button name="My tools" onclick="navigate(['intro-main'],['intro-main-out'],'mytools')" class="intro cbc cbM">
             <div class="cb">
             </div>
             <div class="txtCntOut">
@@ -68,7 +68,15 @@
         </div>
       </div>
     </main>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125699599-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-125699599-1');
+    </script>
     <script type="text/javascript" src="public/scripts/main.js"></script>
   </body>
 </html>
