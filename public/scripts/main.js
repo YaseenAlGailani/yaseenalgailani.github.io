@@ -4,6 +4,8 @@ var introBtns=document.querySelectorAll(".intro");
 var mStylesOut=["cbTM","cbMM","cbBM"];
 var mStylesIn=["cbTClear","cbMClear","cbBClear"];
 var locker=null;
+var
+
 
 function sstart(){
   if(locker!=null){return null;}
