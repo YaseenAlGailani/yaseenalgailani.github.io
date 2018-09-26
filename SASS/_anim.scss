@@ -72,7 +72,7 @@
   100%{top:-30px;opacity:0;}
 }
 // ----------- about-main-anim -----------
-.about-main-anim-in{
+.about-main-in{
   animation:1s forwards about-main-in;
 }
 
@@ -83,7 +83,7 @@
   100%{left:0px;opacity:1;}
 }
 
-.about-main-anim-out{
+.about-main-out{
   left:0;
   opacity:1;
   animation:0.7s 0.5s forwards about-main-out;

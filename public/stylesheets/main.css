@@ -84,7 +84,6 @@ p {
 
 .main-about {
   position: relative;
-  opacity: 0;
   left: 200px;
   display: flex;
   flex-direction: row;
@@ -1377,7 +1376,7 @@ p.mini-txt {
     opacity: 0;
   }
 }
-.about-main-anim-in {
+.about-main-in {
   animation: 1s forwards about-main-in;
 }
 
@@ -1400,7 +1399,7 @@ p.mini-txt {
     opacity: 1;
   }
 }
-.about-main-anim-out {
+.about-main-out {
   left: 0;
   opacity: 1;
   animation: 0.7s 0.5s forwards about-main-out;
