@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body class="body">
-    <header class="nav">
+    <header id="nav" class="nav nav-in">
       <nav>
-        <a href="aboutme.html"><button type="button" name="button" class="nav-btn"><div class="cb"></div><p class="btnTxt">About me</p></button></a>
-        <button type="button" name="button" class="nav-btn active"><div class="cb"></div><p class="btnTxt">My tools</p></button>
-        <a href="recentwork.html"><button type="button" name="button" class="nav-btn"><div class="cb"></div><p class="btnTxt">Recent work</p></button></a>
+        <button onclick="navigate(['nav','main'],['nav-out','main-out'],'aboutme')" type="button" name="About me" class="nav-btn"><div class="cb"></div><p class="btnTxt">About me</p></button>
+        <button onclick="navigate(['nav','main'],['nav-out','main-out'],'recentwork')" type="button" name="Recent work" class="nav-btn"><div class="cb"></div><p class="btnTxt">Recent work</p></button>
       </nav>
     </header>
     <aside class="outline side-links">
@@ -30,7 +29,7 @@
         <a href="mailto:yaseen.algailani@gmail.com"><i class="far fa-envelope"></i></a>
       </div>
     </aside>
-    <main class="main">
+    <main id="main"class="main main-in">
       <article id="web-design" class="article-tools">
         <h2 class="wd-header">Web Design</h2>
         <div class="hl"></div>
@@ -132,5 +131,6 @@
     <footer class="footer">
       <a href="aboutme.html">About me</a> <a href="recentwork.html">Recent work</a>
     </footer>
+    <script type="text/javascript" src="public/scripts/main.js"></script>
   </body>
 </html>

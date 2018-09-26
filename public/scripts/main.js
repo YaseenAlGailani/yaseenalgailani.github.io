@@ -1,13 +1,9 @@
-
 var txtCntIn=document.querySelectorAll(".txtCntIn");
 var introBtns=document.querySelectorAll(".intro");
 var mStylesOut=["cbTM","cbMM","cbBM"];
 var mStylesIn=["cbTClear","cbMClear","cbBClear"];
 var locker=null;
-var btnIntroAboutme=document.getElementById('intro-aboutme');
-var btnIntroMytools=document.getElementById('intro-mytools');
-var btnIntroRecentwork=document.getElementById('intro-recentwork');
-var introMain=document.getElementById("intro-main");
+
 
 // --------------- Intro btn ---------------
 function control(){
@@ -36,17 +32,12 @@ function clearStyles(){
     }
   locker=null;
 }
-// --------------- Intro Page ---------------
+// --------------- Handle Navigation ---------------
+function navigate(el,cl,link){
 
-btnIntroAboutme.addEventListener("click", function(){
-  introMain.classList.add("intro-main-anim");
-  window.setTimeout(function(){window.location.href = 'aboutme.html';},1000);
-});
-btnIntroMytools.addEventListener("click", function(){
-  introMain.classList.add("intro-main-anim");
-  window.setTimeout(function(){window.location.href = 'mytools.html';},1000);
-})
-;btnIntroRecentwork.addEventListener("click", function(){
-  introMain.classList.add("intro-main-anim");
-  window.setTimeout(function(){window.location.href = 'recentwork.html';},1000);
-});
+  for(var i=0;i<el.length;i++){
+    elem=document.getElementById(el[i]);
+    elem.classList.add(cl[i]);
+  }
+  window.setTimeout(function(){window.location.href = link+'.html';},1300);
+}

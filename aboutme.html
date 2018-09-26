@@ -6,14 +6,13 @@
     <meta charset="utf-8">
     <title>Yaseen | About me</title>
     <link href="https://fonts.googleapis.com/css?family=Sanchez|Quicksand|" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
   </head>
   <body class="body-about">
-    <header class="nav">
+    <header id="nav" class="nav nav-in">
       <nav>
-        <button type="button" name="button" class="nav-btn active"><div class="cb"></div><p class="btnTxt">About me</p></button>
-        <a href="mytools.html"><button type="button" name="button" class="nav-btn"><div class="cb"></div><p class="btnTxt">My tools</p></button></a>
-        <a href="recentwork.html"><button type="button" name="button" class="nav-btn"><div class="cb"></div><p class="btnTxt">Recent work</p></button></a>
+        <button onclick="navigate(['nav','aboutme-main'],['nav-out','about-main-anim-out'],'mytools')" type="button" name="My tools" class="nav-btn"><div class="cb"></div><p class="btnTxt">My tools</p></button>
+        <button onclick="navigate(['nav','aboutme-main'],['nav-out','about-main-anim-out'],'recentwork')" type="button" name="Recent Work" class="nav-btn"><div class="cb"></div><p class="btnTxt">Recent work</p></button>
       </nav>
     </header>
     <aside class="outline side-links">
@@ -30,7 +29,7 @@
         <a href="mailto:yaseen.algailani@gmail.com"><i class="far fa-envelope"></i></a>
       </div>
     </aside>
-    <main class="outline main-about">
+    <main id="aboutme-main"class="outline main-about about-main-anim-in">
       <div class="container-left">
           <div class="profile-container">
             <img class="profile-image" src="public/photos/profile_picture.jpg" alt="">
@@ -53,5 +52,6 @@
         </div>
       </div>
     </main>
+    <script type="text/javascript" src="public/scripts/main.js"></script>
   </body>
 </html>

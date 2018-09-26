@@ -83,6 +83,9 @@ p {
 }
 
 .main-about {
+  position: relative;
+  opacity: 0px;
+  left: 200px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -98,16 +101,24 @@ p {
 }
 
 .main {
+  position: relative;
+  top: 100px;
+  opacity: 0;
   align-items: center;
   padding-top: 100px;
 }
 
 .nav {
-  position: absolute;
-  top: 20px;
+  z-index: 1000;
+  position: fixed;
+  top: -50px;
+  opacity: 1;
   text-align: center;
   margin: auto;
   width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: white;
 }
 
 .nav-btn {
@@ -1304,7 +1315,7 @@ p.mini-txt {
     opacity: 1;
   }
 }
-.intro-main-anim {
+.intro-main-anim-out {
   animation-name: intro-main-out;
   animation-duration: 1s;
   animation-fill-mode: forwards;
@@ -1324,6 +1335,132 @@ p.mini-txt {
   }
   100% {
     left: -200px;
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+.nav-in {
+  animation-name: nav-in;
+  animation-duration: 0.5s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes nav-in {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  60% {
+    top: 10px;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+.nav-out {
+  top: 0px;
+  animation: 0.5s forwards nav-out;
+}
+
+@keyframes nav-out {
+  0% {
+    top: 20px;
+    opacity: 1;
+  }
+  40% {
+    top: 30px;
+  }
+  100% {
+    top: -30px;
+    opacity: 0;
+  }
+}
+.about-main-anim-in {
+  animation: 1s forwards about-main-in;
+}
+
+@keyframes about-main-in {
+  0% {
+    left: 200px;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    left: 0px;
+    transform: scale(0.9);
+  }
+  90% {
+    left: 0px;
+    transform: scale(1);
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+.about-main-anim-out {
+  left: 0;
+  animation: 0.7s 0.5s forwards about-main-out;
+}
+
+@keyframes about-main-out {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    left: 0;
+    top: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    top: -100px;
+    transform: scale(0.9);
+    opacity: 0;
+  }
+}
+.main-in {
+  animation: 1s forwards main-in;
+}
+
+@keyframes main-in {
+  0% {
+    top: 100px;
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  50% {
+    top: 0px;
+    transform: scale(0.9);
+  }
+  90% {
+    top: 0px;
+    transform: scale(1);
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
+.main-out {
+  top: 0;
+  opacity: 1;
+  animation: 0.7s 0.5s forwards main-out;
+}
+
+@keyframes main-out {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  50% {
+    top: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    top: -100px;
     transform: scale(0.9);
     opacity: 0;
   }

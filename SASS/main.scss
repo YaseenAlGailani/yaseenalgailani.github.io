@@ -85,6 +85,9 @@ p{
   }
 }
 .main-about{
+  position:relative;
+  opacity:0px;
+  left:200px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -100,15 +103,24 @@ p{
   }
 }
 .main{
+  position: relative;
+  top:100px;
+  opacity:0;
   align-items: center;
   padding-top: 100px;
 }
+
 .nav{
-  position:absolute;
-  top:20px;
+  z-index:1000;
+  position:fixed;
+  top:-50px;
+  opacity:1;
   text-align: center;
   margin:auto;
   width:100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: white;
 }
 .nav-btn {
   display: inline-block;
