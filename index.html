@@ -23,7 +23,7 @@
         <a href="mailto:yaseen.algailani@gmail.com"><i class="far fa-envelope"></i></a>
       </div>
     </aside>
-    <main class="main-intro">
+    <main id="intro-main"class="main-intro">
       <div class="container-left intro-head-anim">
         <h1 class=intro-header>Hi there!</h1>
         <p>I'm Yaseen, a Front-End Developer</p>
@@ -33,44 +33,38 @@
       </div>
       <div class="container-right intro-btn-anim">
         <div class="ibCont">
-          <button class="ibc ibM" onclick="sstart()">
+          <button class="ibc ibM" onclick="control()">
             <div class="ibo iboPulse">
               <div class="ibi ibiPulse"></div>
             </div>
           </button>
-          <a href="aboutme.html">
-            <button class="intro cbc cbT">
-              <div class="cb">
+          <button id="intro-aboutme" class="intro cbc cbT">
+            <div class="cb">
+            </div>
+            <div class="txtCntOut">
+              <div class="txtCntIn">
+              <p class="btnTxt">About me</p>
               </div>
-              <div class="txtCntOut">
-                <div class="txtCntIn">
-                <p class="btnTxt">About me</p>
-                </div>
+            </div>
+          </button>
+          <button id="intro-mytools"class="intro cbc cbM">
+            <div class="cb">
+            </div>
+            <div class="txtCntOut">
+              <div class="txtCntIn">
+                <p class="btnTxt">My tools</p>
               </div>
-            </button>
-          </a>
-          <a href="mytools.html">
-            <button class="intro cbc cbM">
-              <div class="cb">
+            </div>
+          </button>
+          <button id="intro-recentwork"class="intro cbc cbB">
+            <div class="cb">
+            </div>
+            <div class="txtCntOut">
+              <div class="txtCntIn">
+                <p class="btnTxt">Recent work</p>
               </div>
-              <div class="txtCntOut">
-                <div class="txtCntIn">
-                  <p class="btnTxt">My tools</p>
-                </div>
-              </div>
-            </button>
-          </a>
-          <a href="recentwork.html">
-            <button class="intro cbc cbB">
-              <div class="cb">
-              </div>
-              <div class="txtCntOut">
-                <div class="txtCntIn">
-                  <p class="btnTxt">Recent work</p>
-                </div>
-              </div>
-            </button>
-          <a/>
+            </div>
+          </button>
         </div>
       </div>
     </main>

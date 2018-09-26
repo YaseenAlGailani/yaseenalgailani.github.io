@@ -1,12 +1,16 @@
-// --------------- Intro btn ---------------
+
 var txtCntIn=document.querySelectorAll(".txtCntIn");
 var introBtns=document.querySelectorAll(".intro");
 var mStylesOut=["cbTM","cbMM","cbBM"];
 var mStylesIn=["cbTClear","cbMClear","cbBClear"];
 var locker=null;
+var btnIntroAboutme=document.getElementById('intro-aboutme');
+var btnIntroMytools=document.getElementById('intro-mytools');
+var btnIntroRecentwork=document.getElementById('intro-recentwork');
+var introMain=document.getElementById("intro-main");
 
-
-function sstart(){
+// --------------- Intro btn ---------------
+function control(){
   if(locker!=null){return null;}
   if(!(introBtns[0].classList.contains(mStylesOut[0]))){
     for(var i=0;i<introBtns.length;i++){
@@ -33,3 +37,16 @@ function clearStyles(){
   locker=null;
 }
 // --------------- Intro Page ---------------
+
+btnIntroAboutme.addEventListener("click", function(){
+  introMain.classList.add("intro-main-anim");
+  window.setTimeout(function(){window.location.href = 'aboutme.html';},1000);
+});
+btnIntroMytools.addEventListener("click", function(){
+  introMain.classList.add("intro-main-anim");
+  window.setTimeout(function(){window.location.href = 'mytools.html';},1000);
+})
+;btnIntroRecentwork.addEventListener("click", function(){
+  introMain.classList.add("intro-main-anim");
+  window.setTimeout(function(){window.location.href = 'recentwork.html';},1000);
+});
