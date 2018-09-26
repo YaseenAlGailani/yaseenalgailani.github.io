@@ -1402,6 +1402,7 @@ p.mini-txt {
 }
 .about-main-anim-out {
   left: 0;
+  opacity: 1;
   animation: 0.7s 0.5s forwards about-main-out;
 }
 
