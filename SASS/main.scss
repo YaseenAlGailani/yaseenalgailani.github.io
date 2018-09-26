@@ -86,13 +86,13 @@ p{
 }
 .main-about{
   position:relative;
-  opacity:0px;
+  opacity:0;
   left:200px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
   width:90%;
-  margin:50px 20px;
+  margin:70px 20px 10px 20px;
 
   .container-left, .container-right{
     display:flex;
