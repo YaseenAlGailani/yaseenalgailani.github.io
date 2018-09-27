@@ -41,3 +41,4 @@ function navigate(el,cl,link){
   }
   window.setTimeout(function(){window.location.href = link+'.html';},1300);
 }
+// --------------- scrolling effects ---------------

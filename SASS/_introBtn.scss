@@ -136,7 +136,8 @@ button {
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
   animation-delay: 0;
-}@keyframes cbTM {
+}
+@keyframes cbTM {
   50% {top:-3px;left:50px;}
   100%{top:7px;left:40px;opacity:1;
   }
@@ -145,7 +146,8 @@ button {
   animation-name:cbTClear;
   animation-duration:0.5s;
   animation-fill-mode:forwards;
-}@keyframes cbTClear{
+}
+@keyframes cbTClear{
     0%{top:7px;left:40px;opacity:1;}
    30%{top:-3px;left:60px;}
    90%{opacity:0;}
@@ -165,7 +167,8 @@ button {
   animation-duration: 0.7s;
   animation-fill-mode: forwards;
   animation-delay: 0s;
-}@keyframes cbMM {
+}
+@keyframes cbMM {
   50% {left:50px;}
   100%{opacity: 1;left:40px;}
 }
@@ -173,7 +176,8 @@ button {
   animation-name:cbMClear;
   animation-duration:0.5s;
   animation-fill-mode:forwards;
-}@keyframes cbMClear{
+}
+@keyframes cbMClear{
     0%{top:27;left:40px;opacity:1;}
    30%{top:27;left:60px;}
    90%{opacity:0;}
