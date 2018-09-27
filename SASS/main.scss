@@ -397,3 +397,14 @@ p{
 @import 'introBtn';
 @import 'mini';
 @import 'anim';
+
+.scroll-note{
+  font-size: 12px;
+  text-align: center;
+  width:300px;
+  margin:auto;
+  transition:0.7s;
+}
+.scroll-hide{
+  opacity:0;
+}

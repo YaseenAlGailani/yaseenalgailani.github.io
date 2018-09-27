@@ -1464,5 +1464,16 @@ p.mini-txt {
     opacity: 1;
   }
 }
+.scroll-note {
+  font-size: 12px;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  transition: 0.7s;
+}
+
+.scroll-hide {
+  opacity: 0;
+}
 
 /*# sourceMappingURL=main.css.map */
