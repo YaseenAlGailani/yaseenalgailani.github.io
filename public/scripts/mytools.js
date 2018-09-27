@@ -2,7 +2,9 @@
 var articleFrontEnd=document.getElementById('front-end');
 var articleBackend=document.getElementById('backend');
 var articleMostImp=document.getElementById('most-imp');
-var scrollNote=document.getElementById('scroll-note');
+var scrollNote1=document.getElementById('scroll-note1');
+var scrollNote2=document.getElementById('scroll-note2');
+var scrollNote3=document.getElementById('scroll-note3');
 
 var locker=[false,false,false,false,false,false];
 var checkpoint1=0.3;
@@ -10,7 +12,7 @@ var checkpoint2=0.6;
 
 function taskRunner(checkpoint,x,y,element,className){
 
-  if(document.documentElement.scrollTop>=(Math.ceil(document.documentElement.scrollHeight*checkpoint))){
+  if(document.documentElement.scrollTop>=(Math.ceil(document.documentElement.scrollHeight*checkpoint)) || document.body.scrollTop>=(Math.ceil(document.body.scrollHeight*checkpoint))){
     if(!locker[x]){
       locker[x]=true;
       for(var i=0 ; i<element.length;i++){
@@ -20,7 +22,7 @@ function taskRunner(checkpoint,x,y,element,className){
     }
     locker[y]=false;
   }
-  else if(document.documentElement.scrollTop<=(Math.ceil(document.documentElement.scrollHeight*checkpoint))){
+  else if(document.documentElement.scrollTop<=(Math.ceil(document.documentElement.scrollHeight*checkpoint)) || document.body.scrollTop>=(Math.ceil(document.body.scrollHeight*checkpoint))){
     if(!locker[y]){
       locker[y]=true;
       for(var j=0 ; j<element.length;j++){
@@ -33,9 +35,9 @@ function taskRunner(checkpoint,x,y,element,className){
 }
 
 window.addEventListener('scroll', function(){
-  taskRunner(0.1,0,1,[articleFrontEnd,scrollNote],['article-in',"scroll-hide"]);
-  taskRunner(0.4,2,3,[articleBackend],['article-in']);
-  taskRunner(0.6,4,5,[articleMostImp],['article-in']);
+  taskRunner(0.1,0,1,[articleFrontEnd,scrollNote1],['article-in',"scroll-hide"]);
+  taskRunner(0.4,2,3,[articleBackend,scrollNote2],['article-in',"scroll-hide"]);
+  taskRunner(0.6,4,5,[articleMostImp,scrollNote3],['article-in',"scroll-hide"]);
   // if(document.documentElement.scrollTop>=(Math.ceil(document.documentElement.offsetHeight*checkpoint1))){
   //   if(!lockTask1){
   //     lockTask1=true;
