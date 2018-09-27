@@ -116,3 +116,11 @@
   100%{left:-100px;transform:scale(0.9);opacity:0;}
 }
 // ----------- scrolling -----------
+.article-in{
+  opacity:1;
+  // left:0;
+  // animation:1s forwards article-in;
+}
+@keyframes article-in{
+  100%{left:0;opacity: 1;}
+}
