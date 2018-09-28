@@ -43,8 +43,12 @@ p{
   display:flex;
   height:100%;
   justify-content: center;
-
 }
+
+@media screen and (max-width:768px){
+  .html{height: auto;}
+}
+
 .body-intro{
   align-items: center;
   display:flex;
@@ -124,7 +128,6 @@ p{
   flex-wrap:wrap;
   width:90%;
   margin:70px 20px;
-  overflow: auto;
 
   .container-left, .container-right{
     display:flex;

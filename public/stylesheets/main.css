@@ -41,6 +41,11 @@ p {
   justify-content: center;
 }
 
+@media screen and (max-width: 768px) {
+  .html {
+    height: auto;
+  }
+}
 .body-intro {
   align-items: center;
   display: flex;
@@ -123,7 +128,6 @@ p {
   flex-wrap: wrap;
   width: 90%;
   margin: 70px 20px;
-  overflow: auto;
 }
 .main-about .container-left, .main-about .container-right {
   display: flex;
