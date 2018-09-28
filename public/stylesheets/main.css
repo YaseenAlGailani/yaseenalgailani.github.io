@@ -58,6 +58,7 @@ p {
 }
 
 .body {
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -122,6 +123,7 @@ p {
   flex-wrap: wrap;
   width: 90%;
   margin: 70px 20px;
+  overflow: auto;
 }
 .main-about .container-left, .main-about .container-right {
   display: flex;
