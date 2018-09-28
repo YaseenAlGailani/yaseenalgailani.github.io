@@ -52,6 +52,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: auto;
   height: 100%;
   width: 80%;
 }
@@ -120,7 +121,7 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   width: 90%;
-  margin: 70px 20px 10px 20px;
+  margin: 70px 20px;
 }
 .main-about .container-left, .main-about .container-right {
   display: flex;
