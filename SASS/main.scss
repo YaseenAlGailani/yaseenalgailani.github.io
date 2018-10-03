@@ -203,7 +203,7 @@ p{
 
 .article-project{
   box-sizing: border-box;
-  border:solid 1px $p-lightgrey;
+  // border:solid 1px $p-lightgrey;
   border-radius: 15px;
   margin:auto;
   max-width: 80%;
@@ -240,7 +240,7 @@ p{
 }
 .section-II{
   max-width: 80%;
-  margin:100px auto;
+  margin:150px auto;
 
   h3{
     margin-bottom:50px;
@@ -268,7 +268,7 @@ p{
 
   .project-image{
     width:100%;
-    margin:50px 0px;
+    margin:0 0;
   }
   .row-foot{
     text-align: center;
@@ -339,9 +339,14 @@ p{
 @import 'mini';
 
 .profile-image{
+  position:relative;
   width:200px;
   height:200px;
   border-radius: 50%;
+  background-color: black;
+  opacity:0;
+  transform:rotate(-10deg);
+  transform:scale(0.9);
 }
 
 .res-image{

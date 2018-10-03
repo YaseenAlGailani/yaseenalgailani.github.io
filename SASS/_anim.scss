@@ -93,6 +93,14 @@
   50%{left:0;top:0;transform:scale(0.9);}
   100%{left:-100px;transform:scale(0.9);opacity:0;}
 }
+// ----------- profile-anim -----------
+.profile-anim{
+  animation:1s forwards img-anim;
+}
+@keyframes img-anim{
+  30%{transform:scale(1);}
+  100%{transform:scale(1);opacity:1;}
+}
 // ----------- mytools-main-anim -----------
 .main-in{
   transform-origin: top;
