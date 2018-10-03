@@ -753,14 +753,10 @@ p.mini-txt {
 }
 
 .profile-image {
-  position: relative;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background-color: black;
-  opacity: 0;
-  transform: rotate(-10deg);
-  transform: scale(0.9);
 }
 
 .res-image {
