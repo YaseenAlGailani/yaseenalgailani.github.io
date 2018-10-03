@@ -426,7 +426,6 @@ button {
   }
   45% {
     transform: scale(1);
-    background-color: #707070;
   }
 }
 @keyframes pulseOut {
@@ -919,7 +918,6 @@ button {
   }
   45% {
     transform: scale(1);
-    background-color: #707070;
   }
 }
 @keyframes pulseOut {
