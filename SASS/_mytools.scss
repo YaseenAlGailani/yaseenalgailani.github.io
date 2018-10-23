@@ -2,6 +2,7 @@
   position: relative;
   top:130px;
   opacity:0;
+  -webkit-transition: all 0.7s 0.5s ease;
   transition: all 0.7s 0.5s ease;
 }
 .main-mytools-in{
@@ -11,9 +12,16 @@
 
 .article-tools{
   margin:0 20px 100px 20px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   p{
     font:14px $font-p;
     margin: 0;
@@ -23,6 +31,7 @@
 }
 .article-hide{
   opacity:0;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .FE-header{
@@ -59,6 +68,7 @@
   text-align: center;
   width:300px;
   margin:auto;
+  -webkit-transition:0.7s;
   transition:0.7s;
 }
 .scroll-hide{

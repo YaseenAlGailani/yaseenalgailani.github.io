@@ -13,6 +13,7 @@
   opacity:0;
   position:relative;
   left:-50px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 .mini-disp{
@@ -50,19 +51,41 @@ p.mini-txt{
   opacity:0;
 }
 .mini-txt-fade-in{
-  animation-name:fade-in;
-  animation-duration:0.7s;
-  animation-fill-mode:forwards;
+  -webkit-animation-name:fade-in;
+          animation-name:fade-in;
+  -webkit-animation-duration:0.7s;
+          animation-duration:0.7s;
+  -webkit-animation-fill-mode:forwards;
+          animation-fill-mode:forwards;
 }
 .mini-txt-fade-out{
-  animation-name:fade-out;
-  animation-duration:0.7s;
-  animation-fill-mode:forwards;
+  -webkit-animation-name:fade-out;
+          animation-name:fade-out;
+  -webkit-animation-duration:0.7s;
+          animation-duration:0.7s;
+  -webkit-animation-fill-mode:forwards;
+          animation-fill-mode:forwards;
+}
+@-webkit-keyframes fade-in{
+  100%{
+    opacity:1;
+    left:0;
+  }
 }
 @keyframes fade-in{
   100%{
     opacity:1;
     left:0;
+  }
+}
+@-webkit-keyframes fade-out{
+  0%{
+    left:0;
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+    left:0px;
   }
 }
 @keyframes fade-out{

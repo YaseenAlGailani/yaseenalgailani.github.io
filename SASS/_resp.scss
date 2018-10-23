@@ -9,8 +9,12 @@
 @media screen and (min-width:835px){
   .main-projects{
     // outline:solid 1px red;
+    display: -webk
+    it-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .menu{
     width:600px;
@@ -42,10 +46,19 @@
       position: relative;
       top:0;
       left:0;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
       display: inline-flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       overflow-x: visible;
       cursor: pointer;
     }

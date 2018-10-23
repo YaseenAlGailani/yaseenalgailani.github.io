@@ -9,13 +9,17 @@
 
 .main-projects{
   // outline:solid 1px red;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .project{
   position: relative;
   top:50px;
   opacity:0;
+  -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 .project-in{
@@ -39,6 +43,7 @@
     height:1px;
     width:0;
     background-color:$p-lightgrey;
+    -webkit-transition: all 0.5s 0.2s ease;
     transition: all 0.5s 0.2s ease;
   }
   .hr-in{
@@ -54,6 +59,7 @@
     text-transform: uppercase;
     color:$p-grey;
     margin-top:10px;
+    -webkit-transition: all 1s 0.2s ease;
     transition: all 1s 0.2s ease;
   }
   .menu-header-in{
@@ -75,6 +81,7 @@
       right:0;
       top:-10px;
       opacity:0;
+      -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
     }
     .p-item-in{
@@ -86,11 +93,13 @@
       display: inline-block;
       font:20px/30px $font-h;
       margin:5px 0;
+      -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
     }
     .p-selected p{
       color:$p-grey;
-      transform:scale(1.5);
+      -webkit-transform:scale(1.5);
+              transform:scale(1.5);
     }
     .p-selected .dash{
       background-color:$p-grey;
@@ -105,6 +114,7 @@
       margin:0 10px 7px 0;
       height:1px;
       vertical-align: middle;
+      -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
     }
     .p-item:hover{
@@ -122,9 +132,15 @@
 }
 .article-project{
   color:$p-grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   // border:solid 1px $p-lightgrey;
   border-radius: 10px;
   margin:50px auto 10px auto ;
@@ -155,13 +171,15 @@
     font:30px/30px $font-h;
   }
   .col-right{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: inline-block;
     width:80%;
     margin:0px 5px;
   }
   .col-left{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display:inline-block;
     width:90px;
     vertical-align: top;
@@ -238,6 +256,7 @@
     margin:30px 0;
     padding-top:7px;
     outline: none;
+    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
     cursor: pointer;
   }
@@ -253,12 +272,20 @@
   margin:10px auto;
   width:55px;
   height:55px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border:solid 1px $p-grey;
   border-radius:50%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition:0.4s;
   transition:0.4s;
   &:hover{
     border-style:dashed;
