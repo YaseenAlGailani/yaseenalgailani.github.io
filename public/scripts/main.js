@@ -26,7 +26,7 @@ window.addEventListener("scroll", ()=>{
   if(document.documentElement.scrollTop>=(Math.ceil(document.documentElement.scrollHeight*checkpoint)) || document.body.scrollTop>=(Math.ceil(document.body.scrollHeight*checkpoint))){
     if(!lock[0]){
       lock[0]=true;
-      // console.log(checkpoint);
+
       bars.forEach((bar)=>{bar.classList.add('bar-anim-left')});
       aboutImage.classList.add('about-image-wrap-anim');
       aboutText.classList.add('about-text-anim');
@@ -38,7 +38,7 @@ window.addEventListener("scroll", ()=>{
     else if(document.documentElement.scrollTop<(Math.ceil(document.documentElement.scrollHeight*checkpoint)) || document.body.scrollTop<(Math.ceil(document.body.scrollHeight*checkpoint))){
       if(!lock[1]){
         lock[1]=true;
-        console.log(document.documentElement.scrollTop);
+
         window.setTimeout(()=>{
           bars.forEach((bar)=>{bar.classList.remove('bar-anim-left')});
           aboutImage.classList.remove('about-image-wrap-anim');
@@ -46,7 +46,7 @@ window.addEventListener("scroll", ()=>{
           aboutH2.classList.remove('about-h2-anim');}, 0);
           brgr.classList.remove('unfold');
           sideArrow.classList.remove('side-arrow-in');
-          // window.setTimeout(()=>{arrow.classList.add('arrow-anim');},1000);
+
 
 
         lock[0]=false;
@@ -62,7 +62,7 @@ function navigate(link){
   window.setTimeout(function(){window.location.href = link+'.html';},1000);
 }
 
-// console.log(document.documentElement.clientWidth <= 768);
+
 
 // ----------------- Side bar reveal --------------
 sideArrow.addEventListener('click',()=>{

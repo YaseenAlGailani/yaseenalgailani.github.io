@@ -31,7 +31,7 @@ function taskRunner(checkpoint,x,y,element,className){
       for(var i=0 ; i<element.length;i++){
         element[i].classList.add(className[i]);
       }
-      // console.log(">"+checkpoint);
+
     }
     locker[y]=false;
   }
@@ -41,7 +41,7 @@ function taskRunner(checkpoint,x,y,element,className){
       for(var j=0 ; j<element.length;j++){
         element[j].classList.remove(className[j]);
       }
-      // console.log("<"+checkpoint);
+
     }
     locker[x]=false;
   }

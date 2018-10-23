@@ -218,14 +218,23 @@
   margin-bottom: 30px;
   z-index: 100;
   background-color: rgba(255, 255, 255, 0.9);
-  height: 79px;
 }
 .nav-index .brgr-index {
+  position: relative;
+  right: 0;
   padding: 10px 0px;
   display: inline-flex;
   justify-content: flex-end;
+  overflow-x: visible;
+  cursor: pointer;
+}
+
+.brgr-mytools {
   position: relative;
-  right: 0;
+  right: 0px;
+  padding: 10px 0px;
+  display: inline-flex;
+  justify-content: flex-end;
   overflow-x: visible;
   cursor: pointer;
 }
@@ -287,7 +296,7 @@
   margin-top: 10px;
   text-transform: uppercase;
   display: inline-block;
-  font: 30px/30px "rockwell", sans-serif;
+  font: 30px/30px "Slabo 13px", serif;
   transition: all 0.5s ease;
 }
 .nav-mytools .brgr-mytools {
@@ -448,7 +457,7 @@
 }
 
 .brgr-btn {
-  font: 16px/16px "rockwell", sans-serif;
+  font: 16px/16px "Slabo 13px", serif;
   color: #5A5A5A;
   display: inline-block;
   text-transform: uppercase;
@@ -518,7 +527,7 @@
   opacity: 0;
   width: 100%;
   text-align: right;
-  font: 43px/40px "rockwell", sans-serif;
+  font: 43px/40px "Slabo 13px", serif;
   text-transform: uppercase;
   color: #5A5A5A;
   margin-top: 10px;
@@ -551,7 +560,7 @@
 .menu .projects-list p {
   color: #B9B9B9;
   display: inline-block;
-  font: 20px/30px "rockwell", sans-serif;
+  font: 20px/30px "Slabo 13px", serif;
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
 }
@@ -611,10 +620,10 @@
 .section-I .p-head {
   text-align: left;
   margin-top: 12px;
-  font: 16px/24px "rockwell", sans-serif;
+  font: 16px/24px "Slabo 13px", serif;
 }
 .section-I .p-h2 {
-  font: 30px/30px "rockwell", sans-serif;
+  font: 30px/30px "Slabo 13px", serif;
 }
 .section-I .col-right {
   box-sizing: border-box;
@@ -635,7 +644,7 @@
   margin: 50px auto;
 }
 .section-II h3 {
-  font: 24px/24px "rockwell", sans-serif;
+  font: 24px/24px "Slabo 13px", serif;
   margin-bottom: 50px;
 }
 .section-II .brand-image {
@@ -660,10 +669,10 @@
   margin: 50px auto 10px auto;
 }
 .section-III .p-head {
-  font: 15px/15px "rockwell", sans-serif;
+  font: 15px/15px "Slabo 13px", serif;
 }
 .section-III h3 {
-  font: 24px/24px "rockwell", sans-serif;
+  font: 24px/24px "Slabo 13px", serif;
 }
 .section-III .project-image {
   width: 100%;
@@ -693,7 +702,7 @@
   background-color: inherit;
   text-decoration: underline;
   left: 0;
-  font: 15px/15px "rockwell", sans-serif;
+  font: 15px/25px "Slabo 13px", serif;
   width: 120px;
   height: 25px;
   border: none;
@@ -708,7 +717,7 @@
   left: 5px;
 }
 .section-III .p-quote {
-  font-family: "rockwell", sans-serif;
+  font-family: "Slabo 13px", serif;
 }
 
 .p-mail-circle {
@@ -856,17 +865,17 @@ p.mini-txt {
 }
 
 .FE-header {
-  font: 26px "rockwell", sans-serif;
+  font: 26px "Slabo 13px", serif;
   color: #5A5A5A;
 }
 
 .B-header {
-  font: 26px "rockwell", sans-serif;
+  font: 26px "Slabo 13px", serif;
   color: #5A5A5A;
 }
 
 .mImp-header {
-  font: 26px "rockwell", sans-serif;
+  font: 26px "Slabo 13px", serif;
   color: #5A5A5A;
   font-weight: normal;
   text-align: center;
@@ -926,10 +935,6 @@ p.mini-txt {
   margin: 5px 0;
 }
 
-@font-face {
-  font-family: "rockwell", sans-serif;
-  src: url("/public/fonts/ROCK.TTF");
-}
 a {
   text-decoration: none;
   color: inherit;
@@ -968,7 +973,7 @@ a {
 }
 .intro .intro-head p {
   margin: -50px 0;
-  font: 50px/30px "rockwell", sans-serif;
+  font: 53px/50px "Slabo 13px", serif;
   display: inline;
 }
 .intro .head-hi, .intro .head-there {
@@ -994,14 +999,14 @@ a {
   right: -30px;
   opacity: 0;
   margin: 0;
-  font: 36px/55px "rockwell", sans-serif;
+  font: 40px/40px "Slabo 13px", serif;
 }
 .intro .intro-p2 {
   position: relative;
   bottom: 10px;
   opacity: 0;
   margin: 7px 0;
-  font: 16px/20px "rockwell", sans-serif;
+  font: 18px/18px "Slabo 13px", serif;
   text-align: right;
 }
 
@@ -1056,7 +1061,7 @@ a {
 }
 .about-me .about-h2 {
   color: #5A5A5A;
-  font: 35px/30px "rockwell", sans-serif;
+  font: 35px/30px "Slabo 13px", serif;
   text-transform: uppercase;
   text-align: center;
   position: relative;
@@ -1214,7 +1219,7 @@ a {
   .section-I .p-head {
     text-align: right;
     margin-top: 12px;
-    font: 16px/24px "rockwell", sans-serif;
+    font: 16px/24px "Slabo 13px", serif;
   }
 
   .nav-projects {
@@ -1243,25 +1248,25 @@ a {
     width: 300px;
   }
   .intro .intro-head p {
-    font: 70px/50px "rockwell", sans-serif;
+    font: 73px/60px "Slabo 13px", serif;
   }
   .intro .intro-p1 {
-    font: 51px/65px "rockwell", sans-serif;
+    font: 56px/50px "Slabo 13px", serif;
   }
   .intro .intro-p2 {
-    font: 23px/20px "rockwell", sans-serif;
+    font: 23px/20px "Slabo 13px", serif;
   }
   .intro .intro-p1-wrap {
     height: 50px;
   }
 
   .nav-index {
-    top: 20px;
+    top: 0;
     width: 90%;
   }
 
   .about-me .about-h2 {
-    font: 40px/35px "rockwell", sans-serif;
+    font: 40px/35px "Slabo 13px", serif;
     text-align: right;
     top: 60px;
   }

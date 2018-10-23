@@ -1,4 +1,4 @@
-$font-h:'rockwell', sans-serif;;
+$font-h:'Slabo 13px', serif;;
 $font-p:'Quicksand', sans-serif;
 $font-wd:'Pacifico', cursive;
 $p-darkgrey:#343434;
@@ -15,10 +15,6 @@ $p-bgrey:#F2F2F2;
 @import 'mini';
 @import 'mytools';
 
-@font-face{
-    font-family: $font-h;
-    src: url('/public/fonts/ROCK.TTF'),
-}
 a{
   text-decoration: none;
   color:inherit;
@@ -54,7 +50,7 @@ a{
   }
   .intro-head p{
     margin:-50px 0;
-    font:50px/30px $font-h;
+    font:53px/50px $font-h;
     display: inline;
   }
   .head-hi, .head-there{
@@ -80,14 +76,14 @@ a{
     right:-30px;
     opacity:0;
     margin:0;
-    font:36px/55px $font-h;
+    font:40px/40px $font-h;
   }
   .intro-p2{
     position:relative;
     bottom:10px;
     opacity:0;
     margin:7px 0;
-    font:16px/20px $font-h;
+    font:18px/18px $font-h;
     text-align: right;
   }
 
