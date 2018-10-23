@@ -294,7 +294,6 @@
   margin: auto;
   display: inline-flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: flex-end;
   overflow-x: visible;
   cursor: pointer;
@@ -333,7 +332,8 @@
   margin: 7px auto;
   width: 35px;
   transform-origin: right;
-  vertical-align: top;
+  vertical-align: middle;
+  transition: all 0.3s ease;
 }
 .main-index .bar1, .nav-mytools .bar1 {
   transition-delay: 0.1s;
@@ -364,7 +364,8 @@
   margin: 7px auto;
   width: 35px;
   transform-origin: right;
-  vertical-align: top;
+  vertical-align: middle;
+  transition: all 0.3s ease;
 }
 .main-projects .bar1 {
   transition-delay: 0.1s;
