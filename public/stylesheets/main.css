@@ -391,7 +391,7 @@
 }
 
 .unfold .bar2 {
-  transform: scale(0);
+  width: 0;
 }
 
 .unfold .bar3 {
