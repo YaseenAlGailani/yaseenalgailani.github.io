@@ -1,83 +1,90 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="html-intro">
+<html class="html-index" lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Yaseen</title>
     <meta name="Description" content="Front-End Developer Portfolio, Yaseen AlGailani, Syndey, NSW, Australia">
     <link rel="stylesheet" href="public/stylesheets/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Sanchez|Quicksand|" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
-  <body class="body-intro">
-    <aside class="outline side-links">
-      <div class="side-circle side-circle-anim c-1">
-        <a href="https://www.linkedin.com/in/yaseenalgailani/" title="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+  <body class='body-index'>
+    <aside class="side-links">
+      <div class="side-arrow">
+          <i class="fas fa-chevron-right fa-2x"></i>
       </div>
-      <div class="side-circle side-circle-anim c-2">
-        <a href="https://github.com/YaseenAlGailani" title="Visit my GitHub profile"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="side-circle side-circle-anim c-3">
-        <a href="https://www.behance.net/YaseenAlGailani" title="Visit my Behance profile"><i class="fab fa-behance"></i></a>
-      </div>
-      <div class="side-circle side-circle-anim c-4">
-        <a href="mailto:yaseen.algailani@gmail.com" title="Send me an email"><i class="far fa-envelope"></i></a>
-      </div>
-    </aside>
-    <main id="intro-main"class="main-intro">
-      <div class="container-left intro-head-anim">
-        <h1 class=intro-header>Hi there!</h1>
-        <p>I'm Yaseen, a Front-End Developer</p>
-        <p>I believe that “Simplicity is the ultimate sophistication”, don’t you?</p>
-        <br>
-        <p class="alert-m">Portfolio is under development, will be done very soon.. sorry!</p>
-      </div>
-      <div class="container-right intro-btn-anim">
-        <div class="ibCont">
-          <button aria-label="reveal Buttons"  class="ibc ibM" onclick="control()">
-            <div class="ibo iboPulse">
-              <div class="ibi ibiPulse"></div>
-            </div>
-          </button>
-          <button name="About me" onclick="navigate(['intro-main'],['intro-main-out'],'aboutme')" class="intro cbc cbT">
-            <div class="cb">
-            </div>
-            <div class="txtCntOut">
-              <div class="txtCntIn">
-              <p class="btnTxt">About me</p>
-              </div>
-            </div>
-          </button>
-          <button name="My tools" onclick="navigate(['intro-main'],['intro-main-out'],'mytools')" class="intro cbc cbM">
-            <div class="cb">
-            </div>
-            <div class="txtCntOut">
-              <div class="txtCntIn">
-                <p class="btnTxt">My tools</p>
-              </div>
-            </div>
-          </button>
-          <button name="Recent work" onclick="navigate(['intro-main'],['intro-main-anim-out'],'recentwork')" class="intro cbc cbB">
-            <div class="cb">
-            </div>
-            <div class="txtCntOut">
-              <div class="txtCntIn">
-                <p class="btnTxt">Recent work</p>
-              </div>
-            </div>
-          </button>
+      <div class='side-circles-wrap'>
+        <div class="side-circle side-circle-anim">
+          <a href="https://www.linkedin.com/in/yaseenalgailani/" title="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="side-circle side-circle-anim c-2">
+          <a href="https://github.com/YaseenAlGailani" title="Visit my GitHub profile"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="side-circle side-circle-anim c-3">
+          <a href="https://www.behance.net/YaseenAlGailani" title="Visit my Behance profile"><i class="fab fa-behance"></i></a>
+        </div>
+        <div class="side-circle side-circle-anim c-4">
+          <a href="mailto:yaseen.algailani@gmail.com" title="Send me an email"><i class="far fa-envelope"></i></a>
         </div>
       </div>
-    </main>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125699599-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    </aside>
+    <svg id="intro-svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width='100%' height='100%' viewBox='0 0 1280 699'>
+      <path class="intro-svg" d="M0 0, h1280, v699, l-1080 -70, l-200 70, Z" />
+    </svg>
+    <main id="main-index" class='main-index'>
 
-      gtag('config', 'UA-125699599-1');
+      <section class="intro">
+
+        <div class="intro-cont">
+          <div class="intro-head"><div class="head-hi hi-anim"><p>Hi&#160;</p></div><div class='head-there there-anim'><p>there!</p></div></div>
+          <div class="intro-p1-wrap intro-p1-wrap-anim">
+            <p class='intro-p1 intro-p1-anim'>I’m Yaseen,</p>
+          </div>
+          <p class='intro-p2 intro-p2-anim'> a Front End Developer</p>
+          <div class='svg-arrow-wrap'>
+            <svg class='arrow' version="1.1" viewBox="0 0 100 300" width='30' height='90' fill="none" stroke="none" stroke-linecap="square"stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+              <path class='ccl' d="m42.877666 9.163127l0 0c0 -3.9643536 3.213745 -7.1780977 7.178097 -7.1780977l0 0c1.9037514 0 3.7295265 0.7562617 5.0756836 2.1024165c1.3461533 1.3461542 2.1024132 3.1719313 2.1024132 5.075681l0 0c0 3.9643536 -3.2137413 7.1780977 -7.178097 7.1780977l0 0c-3.9643517 0 -7.178097 -3.2137442 -7.178097 -7.1780977z" fill-rule="evenodd"/><path class='ccl' d="m42.877666 43.01956l0 0c0 -3.9643555 3.213745 -7.178097 7.178097 -7.178097l0 0c1.9037514 0 3.7295265 0.7562599 5.0756836 2.102417c1.3461533 1.3461533 2.1024132 3.1719284 2.1024132 5.07568l0 0c0 3.9643555 -3.2137413 7.178097 -7.178097 7.178097l0 0c-3.9643517 0 -7.178097 -3.2137413 -7.178097 -7.178097z" fill-rule="evenodd"/><path class='line' d="m42.877666 74.676216l0 0c0 -3.9643555 3.213745 -7.1781006 7.178097 -7.1781006l0 0l0 0c1.9037514 0 3.7295265 0.75626373 5.0756836 2.102417c1.3461533 1.3461533 2.1024132 3.171936 2.1024132 5.0756836l0 104.4553c0 3.9643555 -3.2137413 7.1781006 -7.178097 7.1781006l0 0l0 0c-3.9643517 0 -7.178097 -3.213745 -7.178097 -7.1781006z" fill-rule="evenodd"/><path class='line' d="m83.58849 135.5049l0 0c2.801651 -2.8016357 7.344017 -2.8016357 10.145668 0l0 0l0 0c1.345398 1.3454132 2.1012344 3.170166 2.1012344 5.0728455c0 1.9026794 -0.7558365 3.7274323 -2.1012344 5.07283l-38.578392 38.578384c-2.8016472 2.801651 -7.344017 2.801651 -10.145664 0l0 0l0 0c-2.8016472 -2.801651 -2.8016472 -7.3440094 0 -10.14566z" fill-rule="evenodd"/><path class='line' d="m6.2659864 145.65057l0 0c-2.8016484 -2.801651 -2.8016484 -7.3440247 0 -10.145676l0 0l0 0c1.3453989 -1.345398 3.1701517 -2.1012268 5.072833 -2.1012268c1.9026814 0 3.7274342 0.75582886 5.072834 2.1012268l38.578392 38.5784c2.8016472 2.801651 2.8016472 7.3440094 0 10.14566l0 0l0 0c-2.8016472 2.801651 -7.344017 2.801651 -10.145668 0z" fill-rule="evenodd"/></g>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id='About'class="about-me">
+        <nav class='nav-index'>
+            <div class="brgr-index">
+              <div class='bars-wrap' onclick="unfolder()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+              <div class='brgr-btns-wrap'>
+                <div class='brgr-btns'>
+                  <div onclick='navigate("mytools")' class='brgr-btn'>My Tools</div><div class='vbar'></div><div onclick="navigate('myprojects')" class='brgr-btn'>Projects</div>
+                </div>
+              </div>
+            </div>
+        </nav>
+        <div class="about-cont">
+          <h2 class="about-h2">About<br>Me</h2>
+          <div class='about-image-wrap'>
+            <svg id="about-image-svg" xmlns="http://www.w3.org/2000/svg" width='220px' height='420px' viewBox='0 0 220 420'>
+              <path class='about-image-frame stroke-anim' d="m4.288714 109.3832l0 0c0 -58.35084 47.3027 -105.65354 105.65355 -105.65354l0 0l0 0c28.021057 0 54.894455 11.131323 74.70833 30.945208c19.813889 19.81388 30.945206 46.68727 30.945206 74.708336l0 201.98425l0 0c0 58.35083 -47.302704 105.653534 -105.653534 105.653534l0 0l0 0c-58.350845 0 -105.65355 -47.302704 -105.65355 -105.653534z" />
+            </svg>
+            <div class="about-image"></div>
+          </div>
+          <div class="about-text">
+            <p>I’m very passionate about Web Design and Development. <br>I enjoy brainstorming and bringing ideas to life.</p>
+            <p>I like writing clean, well-crafted and efficient code, making sure that it fulfils my client’s needs and that it functions perfectly well.</p>
+            <p>I have interacted with many clients with different backgrounds and varying technical levels, so communication is one of my strongest suits.</p>
+            <p>Looking forward to meeting you!</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <script type="text/javascript" src="public/scripts/main.js">
+
     </script>
-    <script type="text/javascript" src="public/scripts/main.js"></script>
   </body>
 </html>

@@ -1,3 +1,109 @@
+//----------- Intro ---------------
+.hi-anim{
+  animation: 1s 0.5s forwards hi-there-anim;
+  animation-timing-function:cubic-bezier(.68,.01,.35,1);
+}
+.there-anim{
+    animation: 1s 0.7s forwards hi-there-anim;
+    animation-timing-function:cubic-bezier(.68,.01,.35,1);
+}
+@keyframes hi-there-anim{
+  50%{top:-20px;}
+  70%{top:10px;}
+  100%{top:0; opacity:1;}
+}
+
+
+.intro-p1-wrap-anim{
+  animation:0.5s 1s ease-out forwards intro-p1-wrap-anim;
+}
+@keyframes intro-p1-wrap-anim{
+  80%{left:10px;}
+  100%{left:0;opacity:1;}
+}
+
+
+.intro-p1-anim{
+  animation:0.7s 1.2s ease forwards intro-p1-anim;
+}
+@keyframes intro-p1-anim{
+  100%{right:-5px;opacity:1;}
+}
+
+.intro-p2-anim{
+  animation: 0.7s 1.2s forwards intro-p2-anim;
+  animation-timing-function:cubic-bezier(.68,.01,.35,1);
+}
+@keyframes intro-p2-anim{
+  50%{bottom:-15px;}
+  70%{bottom:5px;}
+  100%{bottom:0;opacity:1;}
+}
+
+
+.main-index-out{
+  animation-name:index-main-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes index-main-out{
+  0%{left:0; opacity:1;}
+  50%{left:0;transform:scale(0.9);}
+  90%{opacity:0;}
+  100%{left:-200px;transform:scale(0.9);opacity:0;}
+}
+
+
+// ------ Intro - arrow SVG --------
+@keyframes bounce{
+  25%{opacity:0;top:25px;}
+  37.5%{opacity:1;top:50px;}
+  50%{top:25px;}
+  67.5%{top:50px;opacity:1;}
+  80%{top:25px;}
+  85%{opacity:0;}
+}
+@keyframes ccl-opacity{
+  25%{opacity:0;}
+  37.5%{opacity:1;}
+  50%{opacity:0;}
+  67.5%{opacity:1;}
+  85%{opacity:1;}
+}
+//----------- about me ---------------
+.about-image-wrap-anim{
+  // animation:0.7s ease forwards about-image-wrap-anim;
+  transform:translatey(-50px);
+  opacity:1 !important;
+}
+@keyframes about-image-wrap-anim{
+  100%{transform:translatey(-50px);opacity:1;}
+}
+
+.about-h2-anim{
+  // animation:0.7s ease forwards about-h2-anim;
+  transform:translatex(-30px);
+  opacity:1 !important;
+}
+@keyframes about-h2-anim{
+  100%{right:0;opacity: 1;}
+}
+
+.about-text-anim{
+  // animation:0.7s ease forwards about-text-anim;
+  transform:translateX(30px);
+  opacity:1 !important;
+}
+@keyframes about-text-anim{
+  100%{transform:translateX(50px);opacity:1;}
+}
+
+.stroke-anim{
+  animation:20s linear infinite forwards about-image-stroke;
+}
+@keyframes about-image-stroke{
+  90%{stroke-dashoffset:100;}
+}
 // ----------- side-circle-anim -----------
 .side-circle-anim{
   position:relative;
@@ -17,115 +123,9 @@
   100%{left:0;opacity:1;}
 
 }
-// ----------- intro-head-anim -----------
-.intro-head-anim{
-  animation-name:intro-head-in;
-  animation-duration: 1s;
-  animation-delay:1s;
-  animation-fill-mode:forwards;
-}
-@keyframes intro-head-in{
-  0%{left:30px;opacity:0;}
-  100%{opacity:1;transform:translate(-30px,0);}
-}
-.intro-btn-anim{
-  animation-name:intro-btn-in;
-  animation-duration:1s;
-  animation-delay:2s;
-  animation-fill-mode:forwards;
-}
-@keyframes intro-btn-in{
-  0%{opacity:0;}
-  100%{opacity:1;}
-}
-// ----------- intro-main-anim -----------
-.intro-main-out{
-  animation-name:intro-main-out;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-@keyframes intro-main-out{
-  0%{left:0; opacity:1;}
-  50%{left:0;transform:scale(0.9);}
-  90%{opacity:0;}
-  100%{left:-200px;transform:scale(0.9);opacity:0;}
-}
-// ----------- nav-anim -----------
-.nav-in{
-  animation-name:nav-in;
-  animation-duration:0.5s;
-  animation-delay: 0.7s;
-  animation-fill-mode: forwards;
-}
-@keyframes nav-in{
-  0%{top:-50px;opacity:0;}
-  60%{top:10px;}
-  100%{top:0px;opacity:1}
-}
-.nav-out{
-  top:0px;
-  animation:0.5s forwards nav-out;
-}
-@keyframes nav-out{
-  0%{top:20px;opacity:1;}
-  40%{top:30px;}
-  100%{top:-30px;opacity:0;}
-}
-// ----------- about-main-anim -----------
-.about-main-in{
-  animation:1s forwards about-main-in;
-}
-
-@keyframes about-main-in{
-  0%{left:200px;opacity:0;transform:scale(0.9)}
-  50%{left:0px;transform:scale(0.9);}
-  90%{left:0px;transform:scale(1);}
-  100%{left:0px;opacity:1;}
-}
-
-.about-main-out{
-  left:0;
-  opacity:1;
-  animation:0.7s 0.5s forwards about-main-out;
-}
-@keyframes about-main-out{
-  0%{left:0;opacity:1;}
-  50%{left:0;top:0;transform:scale(0.9);}
-  100%{left:-100px;transform:scale(0.9);opacity:0;}
-}
-// ----------- profile-anim -----------
-.profile-anim{
-  animation:1s forwards img-anim;
-}
-@keyframes img-anim{
-  30%{transform:scale(1);}
-  100%{transform:scale(1);opacity:1;}
-}
-// ----------- mytools-main-anim -----------
-.main-in{
-  transform-origin: top;
-  animation:1s forwards main-in;
-}
-@keyframes main-in{
-  0%{left:200px;opacity:0;transform:scale(0.9)}
-  50%{left:0px;transform:scale(0.9);}
-  90%{left:0px;transform:scale(1);}
-  100%{left:0px;opacity:1;}
-}
-.main-out{
-  left:0;
-  opacity:1;
-  transform-origin: top;
-  animation:0.7s 0.5s forwards main-out;
-}
-@keyframes main-out{
-  0%{left:0;opacity:1;}
-  50%{left:0;transform:scale(0.9);}
-  100%{left:-100px;transform:scale(0.9);opacity:0;}
-}
-// ----------- scrolling -----------
+// ----------- My tools - scroll -----------
 .article-in{
-  opacity:1;
+  opacity:1 !important;
   // left:0;
   // animation:1s forwards article-in;
 }

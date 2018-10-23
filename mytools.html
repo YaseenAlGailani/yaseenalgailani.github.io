@@ -1,35 +1,56 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" >
-  <head >
-    <link rel="stylesheet" href="public/stylesheets/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Yaseen | My tools</title>
-    <link href="https://fonts.googleapis.com/css?family=Sanchez|Quicksand|Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  </head>
-  <body class="body">
-    <header id="nav" class="nav nav-in">
-      <nav>
-        <button onclick="navigate(['nav','main'],['nav-out','main-out'],'aboutme')" type="button" name="About me" class="nav-btn"><div class="cb"></div><p class="btnTxt">About me</p></button>
-        <button onclick="navigate(['nav','main'],['nav-out','main-out'],'recentwork')" type="button" name="Recent work" class="nav-btn"><div class="cb"></div><p class="btnTxt">Recent work</p></button>
-      </nav>
-    </header>
-    <aside class="outline side-links">
-      <div class="side-circle">
-        <a href="https://www.linkedin.com/in/yaseenalgailani/" title="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+<html lang="en" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>My Tools | Yaseen</title>
+  <meta name="Description" content="Front-End Developer Portfolio, Yaseen AlGailani, Syndey, NSW, Australia">
+  <link rel="stylesheet" href="public/stylesheets/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+  <body>
+    <aside class="side-links">
+      <div class="side-arrow">
+          <i class="fas fa-chevron-right fa-2x"></i>
       </div>
-      <div class="side-circle">
-        <a href="https://github.com/YaseenAlGailani" title="Visit my GitHub profile"><i class="fab fa-github"></i></a>
-      </div>
-      <div class="side-circle">
-        <a href="https://www.behance.net/YaseenAlGailani" title="Visit my Behance profile"><i class="fab fa-behance"></i></a>
-      </div>
-      <div class="side-circle">
-        <a href="mailto:yaseen.algailani@gmail.com" title="Send me an email"><i class="far fa-envelope"></i></a>
+      <div class='side-circles-wrap'>
+        <div class="side-circle">
+          <a href="https://www.linkedin.com/in/yaseenalgailani/" title="Visit my LinkedIn profile"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="side-circle">
+          <a href="https://github.com/YaseenAlGailani" title="Visit my GitHub profile"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="side-circle">
+          <a href="https://www.behance.net/YaseenAlGailani" title="Visit my Behance profile"><i class="fab fa-behance"></i></a>
+        </div>
+        <div class="side-circle">
+          <a href="mailto:yaseen.algailani@gmail.com" title="Send me an email"><i class="far fa-envelope"></i></a>
+        </div>
       </div>
     </aside>
-    <main id="main"class="main main-in">
+    <nav class='nav-mytools'>
+      <div class='nav-mt-wrap'>
+        <div class="col-left">
+          <h2 class='mt-title'>my tools</h2>
+        </div>
+        <div class='col-right'>
+          <div class="brgr-mytools" onclick="unfolder(this, 'unfold')">
+            <div class='bars-wrap'>
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class='brgr-btns-wrap'>
+              <div class='brgr-btns'>
+                <div onclick='navigate("index.html#About")'class='brgr-btn'>About me</div><div class='vbar'></div><div onclick='navigate("myprojects.html")'class='brgr-btn'>Projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="main-mytools">
       <article id="web-design" class="article-tools">
         <h2 class="wd-header">Web Design</h2>
         <div class="hl"></div>
@@ -59,7 +80,7 @@
       </article>
       <p id="scroll-note1"class="scroll-note">Scroll down for more</p>
       <article id="front-end" class="article-tools article-hide">
-        <h2>&lt;front-end/&gt;</h2>
+        <h2 class='FE-header'>&lt;front-end/&gt;</h2>
         <div class="hl"></div>
         <p>HTML - CSS - JavaScript</p>
         <div class="hlt"></div>
@@ -103,7 +124,7 @@
       </article>
       <p id="scroll-note2"class="scroll-note">Keep scrolling</p>
       <article id="backend" class="article-tools article-hide">
-        <h2>Backend</h2>
+        <h2 class='B-header'>Backend</h2>
         <p>I’m more of a front-end developer, but I know how things work here too</p>
         <div class="hl"></div>
         <p>Node.js</p>
@@ -118,12 +139,12 @@
         <div class="hlt"></div>
         <div class="mini mini-disp">
           <div class="mini-out">
-            <p class="mini-txt disp">Currently learning React!</p>
+
           </div>
         </div>
       </article>
     </main>
-    <script type="text/javascript" src="public/scripts/main.js"></script>
-    <script type="text/javascript" src="public/scripts/mytools.js"></script>
+
+      <script type="text/javascript" src="public/scripts/mytools.js"></script>
   </body>
 </html>

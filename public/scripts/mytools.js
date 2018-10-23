@@ -1,14 +1,27 @@
+let unfolder=(self,className)=>{
+  self.classList.toggle(className);
+  if(document.documentElement.clientWidth <= 490){
+    title.classList.toggle('hide-title')
+  }
+}
 
-var articleFrontEnd=document.getElementById('front-end');
-var articleBackend=document.getElementById('backend');
-var articleMostImp=document.getElementById('most-imp');
-var scrollNote1=document.getElementById('scroll-note1');
-var scrollNote2=document.getElementById('scroll-note2');
-var scrollNote3=document.getElementById('scroll-note3');
+let articleFrontEnd=document.getElementById('front-end');
+let articleBackend=document.getElementById('backend');
+let articleMostImp=document.getElementById('most-imp');
+let scrollNote1=document.getElementById('scroll-note1');
+let scrollNote2=document.getElementById('scroll-note2');
+let scrollNote3=document.getElementById('scroll-note3');
+let bars=document.querySelectorAll('.bars-wrap div');
+let nav=document.querySelector('.nav-mytools');
+let mainMytools=document.querySelector('.main-mytools');
+let title=document.querySelector('.mt-title');
+let sideArrow=document.querySelector('.side-arrow');
+let sideCircles=document.querySelector('.side-circles-wrap');
 
-var locker=[false,false,false,false,false,false];
-var checkpoint1=0.3;
-var checkpoint2=0.6;
+
+let locker=[false,false,false,false,false,false];
+let checkpoint1=0.3;
+let checkpoint2=0.6;
 
 function taskRunner(checkpoint,x,y,element,className){
 
@@ -38,20 +51,30 @@ window.addEventListener('scroll', function(){
   taskRunner(0.1,0,1,[articleFrontEnd,scrollNote1],['article-in',"scroll-hide"]);
   taskRunner(0.4,2,3,[articleBackend,scrollNote2],['article-in',"scroll-hide"]);
   taskRunner(0.6,4,5,[articleMostImp,scrollNote3],['article-in',"scroll-hide"]);
-  // if(document.documentElement.scrollTop>=(Math.ceil(document.documentElement.offsetHeight*checkpoint1))){
-  //   if(!lockTask1){
-  //     lockTask1=true;
-  //     articleFrontEnd.classList.add('article-in');
-  //     console.log("Task-1!");
-  //   }
-  //   lockTask2=false;
-  // }
-  // else if(document.documentElement.scrollTop<=(Math.ceil(document.documentElement.offsetHeight*checkpoint1))){
-  //   if(!lockTask2){
-  //     lockTask2=true;
-  //     articleFrontEnd.classList.remove('article-in');
-  //     console.log("Task-2!");
-  //   }
-  //   lockTask1=false;
-  // }
 });
+
+
+// --------------------------------
+window.setTimeout(()=>{
+  nav.classList.add('nav-mytools-in');
+}, 500);
+window.setTimeout(()=>{
+  bars.forEach((bar)=>{bar.classList.add('bar-anim-left');});
+  mainMytools.classList.add('main-mytools-in');
+  sideArrow.classList.add('side-arrow-in');
+}, 1000);
+
+// ----------------------------------------------------
+function navigate(link){
+  nav.classList.remove('nav-mytools-in');
+  bars.forEach((bar)=>{bar.classList.remove('bar-anim-left');});
+  mainMytools.classList.remove('main-mytools-in');
+  sideArrow.classList.remove('side-arrow-in');
+
+  window.setTimeout(function(){window.location.href = link;},1500);
+}
+// ----------------- Side bar reveal --------------
+sideArrow.addEventListener('click',()=>{
+  sideCircles.classList.toggle('side-circles-reveal')
+  sideArrow.classList.toggle('side-arrow-anim');
+})

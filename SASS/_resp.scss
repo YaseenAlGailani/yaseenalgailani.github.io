@@ -1,0 +1,92 @@
+@media screen and (min-width:1032px){
+  .about-me .about-text{
+    bottom:70px;
+  }
+  .about-text{
+    margin-bottom:0;
+  }
+}
+@media screen and (min-width:835px){
+  .main-projects{
+    // outline:solid 1px red;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .menu{
+    width:600px;
+    .projects-head {
+      position: fixed;
+      top:50px;
+      margin:auto;
+      // outline:solid 1px red;
+      padding:0;
+    }
+  }
+  .section-I{
+    max-width: 80%;
+    margin:80px auto 50px auto;
+    .p-head{
+      text-align: right;
+      margin-top: 12px;
+      font:16px/24px $font-h;
+    }
+  }
+  .nav-projects{
+    position: relative;
+    top:0;
+    right:0;
+    height:50px;
+    width:100%;
+    z-index: 200;
+    margin:auto;
+    .brgr-projects{
+      position: relative;
+      top:0;
+      left:0;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      overflow-x: visible;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width:700px){
+  .intro{
+    .intro-cont{
+      width:300px;
+    }
+    .intro-head p{
+      font:70px/50px $font-h;
+    }
+    .intro-p1{
+      font:51px/65px $font-h;
+    }
+    .intro-p2{
+      font:23px/20px $font-h;
+    }
+    .intro-p1-wrap{
+      height:50px;
+    }
+  }
+  .nav-index{
+    top:20px;
+    width:90%;
+  }
+  .about-me{
+    .about-h2{
+      font: 40px/35px $font-h;
+      text-align: right;
+      top:60px;
+    }
+  }
+  .side-arrow{
+    display: none;
+  }
+  .side-circles-wrap{
+    left:0;
+    background-color:inherit;
+  }
+}
