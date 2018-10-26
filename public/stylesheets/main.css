@@ -652,8 +652,8 @@
 }
 
 .brgr-btn {
-  font: 16px/16px "Slabo 13px", serif;
-  color: #5A5A5A;
+  font: 16px/16px "Oswald", sans-serif;
+  color: #343434;
   display: inline-block;
   text-transform: uppercase;
   vertical-align: middle;
@@ -1583,7 +1583,8 @@ a {
 
   .nav-index {
     top: 0;
-    width: 90%;
+    width: 83%;
+    margin-bottom: 5px;
   }
 
   .about-me .about-h2 {
