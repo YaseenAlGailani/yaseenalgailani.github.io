@@ -11,7 +11,7 @@ var mainIndex = document.querySelector('.main-index');
 var arrow = document.querySelector('.arrow');
 var sideArrow = document.querySelector('.side-arrow');
 var sideCirclesWrap = document.querySelector('.side-circles-wrap');
-var sideCircles=document.querySelectorAll('.side-circle');
+var sideCircles=[].slice.call(document.querySelectorAll('.side-circle'));
 
 // --------- arrow svg ---------------
 window.setTimeout(function () {
