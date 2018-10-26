@@ -9,8 +9,7 @@
 @media screen and (min-width:835px){
   .main-projects{
     // outline:solid 1px red;
-    display: -webk
-    it-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
@@ -71,10 +70,12 @@
       width:300px;
     }
     .intro-head p{
-      font:73px/60px $font-h;
+      text-align: center;
+      font:100px/80px $font-h;
     }
     .intro-p1{
-      font:56px/50px $font-h;
+      text-align: center;
+      font:25px/20px $font-wd;
     }
     .intro-p2{
       font:23px/20px $font-h;
@@ -89,9 +90,10 @@
   }
   .about-me{
     .about-h2{
-      font: 40px/35px $font-h;
-      text-align: right;
-      top:60px;
+      font: 30px/35px $font-h;
+      text-align: left;
+      margin:0;
+      // top:60px;
     }
   }
   .side-arrow{

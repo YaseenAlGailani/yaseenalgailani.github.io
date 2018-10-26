@@ -17,7 +17,7 @@
     top: -20px;
   }
   70% {
-    top: 10px;
+    top: 6px;
   }
   100% {
     top: 0;
@@ -29,7 +29,7 @@
     top: -20px;
   }
   70% {
-    top: 10px;
+    top: 6px;
   }
   100% {
     top: 0;
@@ -60,19 +60,19 @@
   }
 }
 .intro-p1-anim {
-  -webkit-animation: 0.7s 1.2s ease forwards intro-p1-anim;
-  animation: 0.7s 1.2s ease forwards intro-p1-anim;
+  -webkit-animation: 0.7s 2s ease forwards intro-p1-anim;
+  animation: 0.7s 2s ease forwards intro-p1-anim;
 }
 
 @-webkit-keyframes intro-p1-anim {
   100% {
-    right: -5px;
+    left: 0px;
     opacity: 1;
   }
 }
 @keyframes intro-p1-anim {
   100% {
-    right: -5px;
+    left: 0px;
     opacity: 1;
   }
 }
@@ -88,7 +88,7 @@
     bottom: -15px;
   }
   70% {
-    bottom: 5px;
+    bottom: 3px;
   }
   100% {
     bottom: 0;
@@ -100,7 +100,7 @@
     bottom: -15px;
   }
   70% {
-    bottom: 5px;
+    bottom: 3px;
   }
   100% {
     bottom: 0;
@@ -437,7 +437,7 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 .nav-mytools .col-left, .nav-mytools .col-right {
@@ -674,7 +674,7 @@
 
 .body-projects {
   height: 98%;
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -1079,6 +1079,11 @@ p.mini-txt {
   opacity: 1;
 }
 
+.body-mytools {
+  width: 80%;
+  margin: auto;
+}
+
 .main-mytools {
   position: relative;
   top: 130px;
@@ -1238,11 +1243,10 @@ a {
   display: block;
   width: 220px;
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 .intro .intro-head p {
-  margin: -50px 0;
-  font: 53px/50px "Slabo 13px", serif;
+  font: 80px/60px "Slabo 13px", serif;
   display: inline;
 }
 .intro .head-hi, .intro .head-there {
@@ -1251,25 +1255,12 @@ a {
   top: 90px;
   opacity: 0;
 }
-.intro .intro-p1-wrap {
-  position: relative;
-  border-radius: 5px;
-  left: -20px;
-  opacity: 0;
-  display: block;
-  margin: 0 auto;
-  max-width: 340px;
-  -webkit-transform-origin: left;
-  transform-origin: left;
-  height: 40px;
-  background-color: #D34949;
-}
 .intro .intro-p1 {
   position: relative;
-  right: -30px;
+  left: -10px;
   opacity: 0;
   margin: 0;
-  font: 40px/40px "Slabo 13px", serif;
+  font: 20px/20px "Pacifico", cursive;
 }
 .intro .intro-p2 {
   position: relative;
@@ -1277,12 +1268,13 @@ a {
   opacity: 0;
   margin: 7px 0;
   font: 18px/18px "Slabo 13px", serif;
-  text-align: right;
+  text-align: left;
 }
 
 #intro-svg {
   position: absolute;
   z-index: -1;
+  left: 0;
 }
 
 .intro-svg {
@@ -1290,9 +1282,9 @@ a {
 }
 
 .svg-arrow-wrap {
-  width: 50px;
-  margin: auto;
   text-align: center;
+  position: relative;
+  top: 30%;
 }
 
 .arrow {
@@ -1301,7 +1293,7 @@ a {
   opacity: 0;
 }
 .arrow path {
-  fill: #5A5A5A;
+  fill: #343434;
 }
 .arrow .ccl {
   opacity: 0;
@@ -1350,10 +1342,9 @@ a {
 .about-me .about-h2 {
   color: #5A5A5A;
   font: 35px/30px "Slabo 13px", serif;
-  text-transform: uppercase;
   text-align: center;
   position: relative;
-  top: 30px;
+  margin: 10 0;
   right: -30px;
   opacity: 0;
   -webkit-transition: all 0.7s ease;
@@ -1487,14 +1478,18 @@ a {
   width: 35px;
   height: 35px;
   margin: 10px 0px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
 }
 .side-circle:hover, .mail-circle:hover {
   border-style: dashed;
 }
 .side-circle i, .mail-circle i {
   color: #5A5A5A;
+}
+
+.hide-ccl {
+  opacity: 0;
 }
 
 @media screen and (min-width: 1032px) {
@@ -1508,7 +1503,7 @@ a {
 }
 @media screen and (min-width: 835px) {
   .main-projects {
-    display: -webk it-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: nowrap;
@@ -1569,10 +1564,12 @@ a {
     width: 300px;
   }
   .intro .intro-head p {
-    font: 73px/60px "Slabo 13px", serif;
+    text-align: center;
+    font: 100px/80px "Slabo 13px", serif;
   }
   .intro .intro-p1 {
-    font: 56px/50px "Slabo 13px", serif;
+    text-align: center;
+    font: 25px/20px "Pacifico", cursive;
   }
   .intro .intro-p2 {
     font: 23px/20px "Slabo 13px", serif;
@@ -1587,9 +1584,9 @@ a {
   }
 
   .about-me .about-h2 {
-    font: 40px/35px "Slabo 13px", serif;
-    text-align: right;
-    top: 60px;
+    font: 30px/35px "Slabo 13px", serif;
+    text-align: left;
+    margin: 0;
   }
 
   .side-arrow {

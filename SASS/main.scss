@@ -60,11 +60,10 @@ a{
     display:block;
     width:220px;
     margin:0 auto;
-    text-align: left;
+    text-align: center;
   }
   .intro-head p{
-    margin:-50px 0;
-    font:53px/50px $font-h;
+    font:80px/60px $font-h;
     display: inline;
   }
   .head-hi, .head-there{
@@ -73,25 +72,25 @@ a{
     top:90px;
     opacity:0;
   }
-  .intro-p1-wrap{
-    position:relative;
-    border-radius: 5px;
-    left:-20px;
-    opacity:0;
-    display:block;
-    margin:0 auto;
-    max-width:340px;
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    height:40px;
-    background-color:$p-red;
-  }
+  // .intro-p1-wrap{
+  //   position:relative;
+  //   border-radius: 5px;
+  //   left:-20px;
+  //   opacity:0;
+  //   display:block;
+  //   margin:0 auto;
+  //   max-width:340px;
+  //   -webkit-transform-origin: left;
+  //           transform-origin: left;
+  //   height:40px;
+  //   background-color:$p-red;
+  // }
   .intro-p1{
     position: relative;
-    right:-30px;
+    left:-10px;
     opacity:0;
     margin:0;
-    font:40px/40px $font-h;
+    font:20px/20px $font-wd;
   }
   .intro-p2{
     position:relative;
@@ -99,29 +98,32 @@ a{
     opacity:0;
     margin:7px 0;
     font:18px/18px $font-h;
-    text-align: right;
+    text-align: left;
   }
 
 }
 #intro-svg{
   position: absolute;
   z-index:-1;
+  left:0;
 }
 .intro-svg{
   fill:$p-lightgrey;
 }
 
 .svg-arrow-wrap{
-  width:50px;
-  margin:auto;
+  // width:50px;
+  // margin:auto;
   text-align: center;
+  position: relative;
+  top:30%;
 }
 .arrow{
   position: relative;
   top:25px;
   opacity:0;
   path{
-  fill:$p-grey;
+  fill:$p-darkgrey;
   }
   .ccl{
   opacity:0;
@@ -171,10 +173,11 @@ a{
   .about-h2{
     color:$p-grey;
     font: 35px/30px $font-h;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
     position: relative;
-    top:30px;
+    margin:10 0;
+    // top:30px;
     right:-30px;
     opacity:0;
     -webkit-transition: all 0.7s ease;
@@ -311,8 +314,8 @@ a{
   width:35px;
   height:35px;
   margin:10px 0px;
-  -webkit-transition:0.4s;
-  transition:0.4s;
+  -webkit-transition:all ease 0.4s;
+  transition:all ease 0.4s;
   &:hover{
     border-style:dashed;
   }
@@ -320,7 +323,9 @@ a{
     color:$p-grey;
   }
 }
-
+.hide-ccl{
+  opacity:0;
+}
 
 
 

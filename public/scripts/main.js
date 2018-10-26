@@ -10,7 +10,8 @@ var bars = [].slice.call(document.querySelectorAll('.bars-wrap div'));
 var mainIndex = document.querySelector('.main-index');
 var arrow = document.querySelector('.arrow');
 var sideArrow = document.querySelector('.side-arrow');
-var sideCircles = document.querySelector('.side-circles-wrap');
+var sideCirclesWrap = document.querySelector('.side-circles-wrap');
+var sideCircles=document.querySelectorAll('.side-circle');
 
 // --------- arrow svg ---------------
 window.setTimeout(function () {
@@ -33,6 +34,10 @@ window.addEventListener("scroll", function () {
       bars.forEach(function (bar) {
         bar.classList.add('bar-anim-left');
       });
+      sideCircles.forEach(function(ccl){
+        ccl.classList.remove('hide-ccl');
+      });
+
       aboutImage.classList.add('about-image-wrap-anim');
       aboutText.classList.add('about-text-anim');
       aboutH2.classList.add('about-h2-anim');
@@ -50,13 +55,17 @@ window.addEventListener("scroll", function () {
         bars.forEach(function (bar) {
           bar.classList.remove('bar-anim-left');
         });
+        sideCircles.forEach(function(ccl){
+          ccl.classList.add('hide-ccl');
+        });
+        arrow.classList.add('arrow-anim');
         aboutImage.classList.remove('about-image-wrap-anim');
         aboutText.classList.remove('about-text-anim');
         aboutH2.classList.remove('about-h2-anim');
       }, 0);
       brgr.classList.remove('unfold');
       sideArrow.classList.remove('side-arrow-in');
-      // window.setTimeout(()=>{arrow.classList.add('arrow-anim');},1000);
+
 
 
       lock[0] = false;
@@ -78,6 +87,6 @@ function navigate(link) {
 
 // ----------------- Side bar reveal --------------
 sideArrow.addEventListener('click', function () {
-  sideCircles.classList.toggle('side-circles-reveal');
+  sideCirclesWrap.classList.toggle('side-circles-reveal');
   sideArrow.classList.toggle('side-arrow-anim');
 });
