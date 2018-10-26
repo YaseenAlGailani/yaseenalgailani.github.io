@@ -6,8 +6,8 @@ var unfolder = function unfolder(self, className) {
 var bars = document.querySelectorAll('.bars-wrap div');
 var project = document.querySelector(".project");
 var menuHeader = document.querySelector('.menu-header');
-var pItems = [].slice.call((document.querySelectorAll('.p-item'));
-var hr = [].slice.call((document.querySelectorAll('.hr'));
+var pItems = [].slice.call(document.querySelectorAll('.p-item'));
+var hr = [].slice.call(document.querySelectorAll('.hr'));
 var sideArrow = document.querySelector('.side-arrow');
 var sideCircles = document.querySelector('.side-circles-wrap');
 
