@@ -171,7 +171,7 @@ a{
     transition: opacity 0.1s ease;
   }
   .about-h2{
-    color:$p-grey;
+    color:$p-darkgrey;
     font: 35px/30px $font-h;
     // text-transform: uppercase;
     text-align: center;
@@ -182,6 +182,9 @@ a{
     opacity:0;
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
+  }
+  .about-h2-me{
+    font: 30px/20px $font-wd;
   }
   .about-image-wrap{
     position: relative;

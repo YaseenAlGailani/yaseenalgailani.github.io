@@ -58,7 +58,9 @@ window.addEventListener("scroll", function () {
         sideCircles.forEach(function(ccl){
           ccl.classList.add('hide-ccl');
         });
-        arrow.classList.add('arrow-anim');
+        window.setTimeout(function () {
+          arrow.classList.add('arrow-anim');
+        }, 1500);
         aboutImage.classList.remove('about-image-wrap-anim');
         aboutText.classList.remove('about-text-anim');
         aboutH2.classList.remove('about-h2-anim');

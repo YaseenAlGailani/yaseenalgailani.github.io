@@ -1340,7 +1340,7 @@ a {
   transition: opacity 0.1s ease;
 }
 .about-me .about-h2 {
-  color: #5A5A5A;
+  color: #343434;
   font: 35px/30px "Slabo 13px", serif;
   text-align: center;
   position: relative;
@@ -1349,6 +1349,9 @@ a {
   opacity: 0;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
+}
+.about-me .about-h2-me {
+  font: 30px/20px "Pacifico", cursive;
 }
 .about-me .about-image-wrap {
   position: relative;
