@@ -148,7 +148,7 @@
   // max-width: 80%;
 
   p{
-    font:14px/22px $font-p;
+    font:14px $font-p;
     margin:10px 0;
   }
   hr{
@@ -182,7 +182,6 @@
             box-sizing: border-box;
     display:inline-block;
     width:90px;
-    vertical-align: top;
     margin:0px 5px;
   }
 }
