@@ -1134,7 +1134,7 @@ p.mini-txt {
 }
 
 .mImp-header {
-  font: 26px "Slabo 13px", serif;
+  font: 26px/22px "Slabo 13px", serif;
   color: #5A5A5A;
   font-weight: normal;
   text-align: center;
