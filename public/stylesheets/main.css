@@ -830,7 +830,7 @@
 }
 .section-I .p-head {
   text-align: left;
-  margin-top: 12px;
+  margin-top: 7px;
   font: 16px/24px "Slabo 13px", serif;
 }
 .section-I .p-h2 {
@@ -849,6 +849,7 @@
   display: inline-block;
   width: 90px;
   margin: 0px 5px;
+  vertical-align: top;
 }
 
 .section-II {
@@ -1528,7 +1529,7 @@ a {
   }
   .section-I .p-head {
     text-align: right;
-    margin-top: 12px;
+    margin-top: 7px;
     font: 16px/24px "Slabo 13px", serif;
   }
 
