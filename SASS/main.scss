@@ -1,9 +1,9 @@
-$font-h:'Slabo 13px', serif;;
+$font-h:'Josefin Sans', sans-serif;
 $font-p:'Quicksand', sans-serif;
 $font-wd:'Pacifico', cursive;
-$font-nav:'Oswald', sans-serif;;
-$p-darkgrey:#343434;
-$p-grey:#5A5A5A;
+$font-nav:'Barlow', sans-serif;
+$p-darkgrey:#222222;
+$p-grey:#333333;
 $p-midgrey:#B9B9B9;
 $p-lightgrey:#F2F2F2;
 $p-red:#D34949;
@@ -250,7 +250,7 @@ a{
   margin-top: -95px;
   left:10px;
   position:fixed;
-  top:50%;
+  bottom:0;
   z-index:1000;
   display: -webkit-box;
   display: -ms-flexbox;

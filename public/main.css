@@ -680,10 +680,24 @@
 .html-projects header {
   display: inline-block;
   width: 20%;
+  min-width: 200px;
 }
 .html-projects main {
   display: inline-block;
   width: 80%;
+}
+
+.project {
+  position: relative;
+  top: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+.project-in {
+  top: 0;
+  opacity: 1;
 }
 
 .menu {
@@ -782,50 +796,43 @@
   transform: scaleX(2);
 }
 
-.project {
-  position: relative;
-  top: 50px;
-  opacity: 0;
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-}
-
-.project-in {
-  top: 0;
-  opacity: 1;
-}
-
-.project article {
+.article-project {
   position: relative;
   color: #333333;
   margin: 110px 50px 50px;
 }
-.project article h2 {
+.article-project h2 {
   font: 20px "Josefin Sans", sans-serif;
   color: #B71818;
   margin: 0 0 5px 0;
 }
-.project article p {
+.article-project p {
   font: 14px "Quicksand", sans-serif;
   margin: 5px 0;
 }
-.project article .heading-box {
+.article-project hr {
+  border: none;
+  width: 80%;
+  height: 1px;
+  background-color: #F2F2F2;
+}
+.article-project .heading-box {
   margin-left: 10px;
 }
-.project article .image-box {
+.article-project .image-box {
   position: relative;
 }
-.project article .image-box img {
+.article-project .image-box img {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   border-radius: 7px;
   margin: 15px;
 }
-.project article .image-box .mobile-img {
+.article-project .mobile-img {
   position: absolute;
   top: 60px;
   right: 0;
 }
-.project article .visit-link {
+.article-project .visit-link {
   position: absolute;
   top: 0;
   right: 0;
@@ -839,7 +846,7 @@
   margin: 5px;
   transition: all 0.5s ease;
 }
-.project article .visit-link:before {
+.article-project .visit-link:before {
   content: "Visit";
   font: 14px "Quicksand", sans-serif;
   position: absolute;
@@ -856,51 +863,19 @@
   transform-origin: right;
   transition: all 0.5s ease;
 }
-.project article .visit-link:hover {
+.article-project .visit-link:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
-.project article .visit-link:hover:before {
+.article-project .visit-link:hover:before {
   opacity: 1;
   right: 50px;
   width: 40px;
 }
-.project article .visit-link i.fas {
+.article-project .visit-link i.fas {
   position: relative;
   top: calc(50% - 8px);
 }
 
-@media (max-width: 835px) {
-  .html-projects header {
-    display: block;
-    width: 90%;
-    margin: auto;
-  }
-  .html-projects main {
-    display: block;
-    width: 100%;
-    margin: auto;
-  }
-
-  .project article {
-    margin: 80px auto;
-  }
-
-  .image-box {
-    position: relative;
-  }
-  .image-box img {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 7px;
-    margin: 15px;
-    width: 90%;
-  }
-  .image-box .mobile-img {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 30%;
-  }
-}
 .dash {
   vertical-align: middle;
   display: inline-block;

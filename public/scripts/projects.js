@@ -1,6 +1,6 @@
 'use strict';
 
-var unfolder = function unfolder(self, className) {
+var unfold = function(self, className) {
   self.classList.toggle(className);
 };
 var bars = document.querySelectorAll('.bars-wrap div');
