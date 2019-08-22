@@ -51,13 +51,13 @@ window.addEventListener('scroll', function (e) {
     }
   }
 
-  if (endofpage) {
+  if (articleMostImp.getBoundingClientRect().top <= dist || endofpage) {
     if (!(articleMostImp.classList.contains('article-in'))) {
       articleMostImp.classList.add('article-in');
       scrollNote3.classList.add('scroll-hide');
     }
   }
-  else if (articleMostImp.getBoundingClientRect().top > 0 || !endofpage) {
+  else if (articleMostImp.getBoundingClientRect().top > dist || !endofpage) {
     if (articleMostImp.classList.contains('article-in')) {
       articleMostImp.classList.remove('article-in');
       scrollNote3.classList.remove('scroll-hide');
