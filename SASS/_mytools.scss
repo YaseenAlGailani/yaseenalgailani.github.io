@@ -5,28 +5,21 @@
 
 .main-mytools{
   position: relative;
-  top:130px;
+  padding-top:100px;
+  top:30px;
   opacity:0;
   -webkit-transition: all 0.7s 0.5s ease;
   transition: all 0.7s 0.5s ease;
 }
 .main-mytools-in{
-  top:100px;
+  top:0;
   opacity:1 !important;
 }
 
 .article-tools{
-  margin:0 20px 100px 20px;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0 20px 100px 20px;
+  display: block;
+  text-align: center;
   p{
     font:14px $font-p;
     margin: 0;
@@ -85,14 +78,14 @@
   width:2px;
   height:45px;
   background-color: $p-lightgrey;
-  margin:5px 0 10px 0;
+  margin:5px auto 10px auto;
 }
 .hls{
   display:block;
   width:2px;
   height:15px;
   background-color: $p-lightgrey;
-  margin:10px 0;
+  margin:10px auto;
 }
 .hlt{
   display:block;
@@ -100,5 +93,5 @@
   height:5px;
   border-radius: 50%;
   background-color: $p-lightgrey;
-  margin:5px 0;
+  margin:5px auto;
 }

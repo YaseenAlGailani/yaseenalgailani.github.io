@@ -1021,29 +1021,22 @@ p.mini-txt {
 
 .main-mytools {
   position: relative;
-  top: 130px;
+  padding-top: 100px;
+  top: 30px;
   opacity: 0;
   -webkit-transition: all 0.7s 0.5s ease;
   transition: all 0.7s 0.5s ease;
 }
 
 .main-mytools-in {
-  top: 100px;
+  top: 0;
   opacity: 1 !important;
 }
 
 .article-tools {
-  margin: 0 20px 100px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  padding: 0 20px 100px 20px;
+  display: block;
+  text-align: center;
 }
 .article-tools p {
   font: 14px "Quicksand", sans-serif;
@@ -1110,7 +1103,7 @@ p.mini-txt {
   width: 2px;
   height: 45px;
   background-color: #F2F2F2;
-  margin: 5px 0 10px 0;
+  margin: 5px auto 10px auto;
 }
 
 .hls {
@@ -1118,7 +1111,7 @@ p.mini-txt {
   width: 2px;
   height: 15px;
   background-color: #F2F2F2;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .hlt {
@@ -1127,7 +1120,11 @@ p.mini-txt {
   height: 5px;
   border-radius: 50%;
   background-color: #F2F2F2;
-  margin: 5px 0;
+  margin: 5px auto;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {

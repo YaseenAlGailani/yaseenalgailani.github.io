@@ -1,12 +1,5 @@
 'use strict';
 
-var unfolder = function unfolder(self, className) {
-  self.classList.toggle(className);
-  if (document.documentElement.clientWidth <= 490) {
-    title.classList.toggle('hide-title');
-  }
-};
-
 var articleFrontEnd = document.getElementById('front-end');
 var articleBackend = document.getElementById('backend');
 var articleMostImp = document.getElementById('most-imp');
@@ -20,36 +13,59 @@ var title = document.querySelector('.mt-title');
 var sideArrow = document.querySelector('.side-arrow');
 var sideCircles = document.querySelector('.side-circles-wrap');
 
-var locker = [false, false, false, false, false, false];
-var checkpoint1 = 0.3;
-var checkpoint2 = 0.6;
-
-function taskRunner(checkpoint, x, y, element, className) {
-
-  if (document.documentElement.scrollTop >= Math.ceil(document.documentElement.scrollHeight * checkpoint) || document.body.scrollTop >= Math.ceil(document.body.scrollHeight * checkpoint)) {
-    if (!locker[x]) {
-      locker[x] = true;
-      for (var i = 0; i < element.length; i++) {
-        element[i].classList.add(className[i]);
-      }
-    }
-    locker[y] = false;
-  } else if (document.documentElement.scrollTop <= Math.ceil(document.documentElement.scrollHeight * checkpoint) || document.body.scrollTop >= Math.ceil(document.body.scrollHeight * checkpoint)) {
-    if (!locker[y]) {
-      locker[y] = true;
-      for (var j = 0; j < element.length; j++) {
-        element[j].classList.remove(className[j]);
-      }
-    }
-    locker[x] = false;
+var unfolder = function (self, className) {
+  self.classList.toggle(className);
+  if (document.documentElement.clientWidth <= 490) {
+    title.classList.toggle('hide-title');
   }
-}
+};
 
-window.addEventListener('scroll', function () {
-  taskRunner(0.1, 0, 1, [articleFrontEnd, scrollNote1], ['article-in', "scroll-hide"]);
-  taskRunner(0.4, 2, 3, [articleBackend, scrollNote2], ['article-in', "scroll-hide"]);
-  taskRunner(0.6, 4, 5, [articleMostImp, scrollNote3], ['article-in', "scroll-hide"]);
+
+var dist,endofpage = 0;
+window.addEventListener('scroll', function (e) {
+  dist = window.innerHeight - (window.innerHeight / 2);
+  endofpage = (window.scrollY + window.innerHeight >= document.body.clientHeight);
+  if (articleFrontEnd.getBoundingClientRect().top <= dist) {
+    if (!(articleFrontEnd.classList.contains('article-in'))) {
+      articleFrontEnd.classList.add('article-in');
+      scrollNote1.classList.add('scroll-hide');
+    }
+  }
+  else if (articleFrontEnd.getBoundingClientRect().top > dist) {
+    if (articleFrontEnd.classList.contains('article-in')) {
+      articleFrontEnd.classList.remove('article-in');
+      scrollNote1.classList.remove('scroll-hide');
+    }
+  }
+
+  if (articleBackend.getBoundingClientRect().top <= dist) {
+    if (!(articleBackend.classList.contains('article-in'))) {
+      articleBackend.classList.add('article-in');
+      scrollNote2.classList.add('scroll-hide');
+    }
+  }
+  else if (articleBackend.getBoundingClientRect().top > dist) {
+    if (articleBackend.classList.contains('article-in')) {
+      articleBackend.classList.remove('article-in');
+      scrollNote2.classList.remove('scroll-hide');
+    }
+  }
+
+  if (endofpage) {
+    if (!(articleMostImp.classList.contains('article-in'))) {
+      articleMostImp.classList.add('article-in');
+      scrollNote3.classList.add('scroll-hide');
+    }
+  }
+  else if (articleMostImp.getBoundingClientRect().top > 0 || !endofpage) {
+    if (articleMostImp.classList.contains('article-in')) {
+      articleMostImp.classList.remove('article-in');
+      scrollNote3.classList.remove('scroll-hide');
+    }
+  }
+
 });
+
 
 // --------------------------------
 window.setTimeout(function () {
