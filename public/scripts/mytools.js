@@ -20,33 +20,55 @@ var unfolder = function (self, className) {
   }
 };
 
+scroller();
 
-var dist,endofpage = 0;
+var dist, endofpage, distNote = 0;
 var buffer=100;
-window.addEventListener('scroll', function (e) {
+window.addEventListener('scroll', scroller);
+
+function scroller() {
   dist = window.innerHeight - (window.innerHeight / 2);
+  distNote = window.innerHeight - (window.innerHeight / 6);
   endofpage = (window.scrollY + window.innerHeight + buffer >= document.body.clientHeight);
 
-  scroller(articleFrontEnd, scrollNote1);
-  scroller(articleBackend, scrollNote2);
-  scroller(articleMostImp, scrollNote3);
+  noteRevealer(articleFrontEnd,scrollNote1)
+  articleRevealer(articleFrontEnd, scrollNote1);
+  noteRevealer(articleBackend, scrollNote2)
+  articleRevealer(articleBackend, scrollNote2);
+  noteRevealer(articleMostImp, scrollNote3)
+  articleRevealer(articleMostImp, scrollNote3);
 
-});
+}
 
-function scroller(articleElement,noteElement){
+function articleRevealer(articleElement,noteElement){
   if (articleElement.getBoundingClientRect().top <= dist || endofpage) {
     if (!(articleElement.classList.contains('article-in'))) {
       articleElement.classList.add('article-in');
-      noteElement.classList.add('scroll-hide');
+      noteElement.classList.add('scroll-hide');  
+      // noteElement.style.display='none';
     }
   }
   else if (articleElement.getBoundingClientRect().top > dist || !endofpage) {
     if (articleElement.classList.contains('article-in')) {
       articleElement.classList.remove('article-in');
-      noteElement.classList.remove('scroll-hide');
+      // noteElement.classList.remove('scroll-hide');
     }
   }
 }
+
+function noteRevealer(articleElement,noteElement) {
+  if (noteElement.getBoundingClientRect().top <= distNote || endofpage) {
+    if(!(articleElement.classList.contains('article-in'))){
+    // if ((noteElement.classList.contains('scroll-hide'))) {
+      noteElement.classList.remove('scroll-hide');
+    }
+  }
+  else if (noteElement.getBoundingClientRect().top > distNote || !endofpage) {
+    // if (!(noteElement.classList.contains('scroll-hide'))) {
+      noteElement.classList.add('scroll-hide');
+  }
+}
+
 
 
 // --------------------------------
