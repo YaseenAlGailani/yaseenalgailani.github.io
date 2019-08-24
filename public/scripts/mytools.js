@@ -22,49 +22,31 @@ var unfolder = function (self, className) {
 
 
 var dist,endofpage = 0;
+var buffer=100;
 window.addEventListener('scroll', function (e) {
   dist = window.innerHeight - (window.innerHeight / 2);
-  endofpage = (window.scrollY + window.innerHeight >= document.body.clientHeight);
-  if (articleFrontEnd.getBoundingClientRect().top <= dist) {
-    if (!(articleFrontEnd.classList.contains('article-in'))) {
-      articleFrontEnd.classList.add('article-in');
-      scrollNote1.classList.add('scroll-hide');
-    }
-  }
-  else if (articleFrontEnd.getBoundingClientRect().top > dist) {
-    if (articleFrontEnd.classList.contains('article-in')) {
-      articleFrontEnd.classList.remove('article-in');
-      scrollNote1.classList.remove('scroll-hide');
-    }
-  }
+  endofpage = (window.scrollY + window.innerHeight + buffer >= document.body.clientHeight);
 
-  if (articleBackend.getBoundingClientRect().top <= dist) {
-    if (!(articleBackend.classList.contains('article-in'))) {
-      articleBackend.classList.add('article-in');
-      scrollNote2.classList.add('scroll-hide');
-    }
-  }
-  else if (articleBackend.getBoundingClientRect().top > dist) {
-    if (articleBackend.classList.contains('article-in')) {
-      articleBackend.classList.remove('article-in');
-      scrollNote2.classList.remove('scroll-hide');
-    }
-  }
-
-  if (articleMostImp.getBoundingClientRect().top <= dist || endofpage) {
-    if (!(articleMostImp.classList.contains('article-in'))) {
-      articleMostImp.classList.add('article-in');
-      scrollNote3.classList.add('scroll-hide');
-    }
-  }
-  else if (articleMostImp.getBoundingClientRect().top > dist || !endofpage) {
-    if (articleMostImp.classList.contains('article-in')) {
-      articleMostImp.classList.remove('article-in');
-      scrollNote3.classList.remove('scroll-hide');
-    }
-  }
+  scroller(articleFrontEnd, scrollNote1);
+  scroller(articleBackend, scrollNote2);
+  scroller(articleMostImp, scrollNote3);
 
 });
+
+function scroller(articleElement,noteElement){
+  if (articleElement.getBoundingClientRect().top <= dist || endofpage) {
+    if (!(articleElement.classList.contains('article-in'))) {
+      articleElement.classList.add('article-in');
+      noteElement.classList.add('scroll-hide');
+    }
+  }
+  else if (articleElement.getBoundingClientRect().top > dist || !endofpage) {
+    if (articleElement.classList.contains('article-in')) {
+      articleElement.classList.remove('article-in');
+      noteElement.classList.remove('scroll-hide');
+    }
+  }
+}
 
 
 // --------------------------------
