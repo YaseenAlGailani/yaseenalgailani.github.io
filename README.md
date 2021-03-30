@@ -1,7 +1,1 @@
-Hi there!
-
-This is my protfolio website.
-
-I'm building this website without Bootsrtap or jQuery to create my own styles and animations.
-
-Thanks!
+Built this portfolio a few years ago and was so proud of it, now when I see it I feel so embarrassed 😂 Planning on updating it sometime this year.
